@@ -1,5 +1,8 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Dropdown from './Dropdown';
 import styles from './Navbar.module.scss';
 
 const pages = [
@@ -15,6 +18,8 @@ const pages = [
 ];
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -26,15 +31,36 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <ul className={styles.links}>
-        {pages.map((page) => (
-          <li key={page.path} className={styles.linkItem}>
-            <Link href={page.path} className={styles.link}>
-              {page.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className={styles.pages}>
+        <ul className={styles.links}>
+          {pages.map((page) => (
+            <li key={page.path} className={styles.linkItem}>
+              <Link
+                href={page.path}
+                className={`${styles.link} ${pathname === page.path ? styles.linkActive : ''}`}
+              >
+                {page.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <button
+          className={styles.hamburger}
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
+        >
+          {isOpen ? (
+            <span className={styles.closeIcon}>&times;</span>
+          ) : (
+            <>
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+              <span className={styles.bar} />
+            </>
+          )}
+        </button>
+        <Dropdown pages={pages} isOpen={isOpen} />
+      </div>
       <div className={styles.cta}>
         <Link href="/implica-te">
           <button type="button" className={styles.ctaBtn}>

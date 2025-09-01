@@ -1,4 +1,4 @@
-@import './fonts';
+@use './fonts' as *;
 
 // Color Palette
 $black: #000000;
