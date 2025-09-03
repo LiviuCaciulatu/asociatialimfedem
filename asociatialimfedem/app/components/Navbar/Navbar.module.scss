@@ -3,7 +3,11 @@
 @use "../../styles/fonts" as *;
 
 .navbar {
-  max-width: 1200px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+  max-width: $maxWidth;
   width: 100%;
   margin: 0 auto;
   display: flex;

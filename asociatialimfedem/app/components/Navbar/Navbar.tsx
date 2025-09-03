@@ -8,7 +8,7 @@ import styles from './Navbar.module.scss';
 const pages = [
   { name: 'ACASĂ', path: '/' },
   { name: 'DESPRE NOI', path: '/despre-noi' },
-  { name: 'ECHIPA NOASTRĂ', path: '/echipa-noastra' },
+  { name: 'ECHIPĂ', path: '/echipa-noastra' },
   { name: 'DESPRE LIMFEDEM', path: '/despre-limfedem' },
   { name: 'CE FACEM', path: '/ce-facem' },
   { name: 'MEDIA', path: '/media' },
