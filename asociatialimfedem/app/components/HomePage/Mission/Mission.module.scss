@@ -1,4 +1,3 @@
-
 @use "sass:color";
 @use "../../../styles/globals" as *;
 
@@ -55,7 +54,6 @@
 }
 
 .right {
-  /* Right column: 60% width */
   flex: 0 0 60%;
   display: flex;
   justify-content: center;
@@ -65,4 +63,30 @@
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
+  scale: 1.3;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .mission {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 4.5rem;
+  }
+  .left,
+  .right {
+    flex: 0 0 100%;
+  }
+  .title{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .button {
+    margin: 0 auto;
+    display: block;
+  }
 }

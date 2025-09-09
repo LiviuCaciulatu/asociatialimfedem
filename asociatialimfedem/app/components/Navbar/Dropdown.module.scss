@@ -2,31 +2,32 @@
 @use "../../styles/fonts" as *;
 
 .menu {
-  max-width: $maxWidth;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none;
   position: absolute;
   top: 70px;
-  transform: translate(-50%, -100%);
   background: #fff;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
+  // padding: 1rem 2rem;
   transform: translateY(-100%);
   transition: transform 0.3s ease;
   display: none;
   z-index: 1000;
   overflow-y: auto;
+  border: 0.1rem solid black;
 }
 
 .open {
   transform: translateY(0);
-  transform: translateX(-80);
   display: block;
 }
 
 .links {
   display: flex;
   flex-direction: column;
-  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -38,20 +39,22 @@
 }
 
 .link {
+  width: 100%;
   text-decoration: none;
   color: $black;
   font-weight: 500;
   font-size: 0.85rem;
   transition: color 0.2s;
-  text-align: center;
+
 }
 
 .link:hover {
-  color: $teal;
+  // color: $teal;
+  background-color: $orange;
 }
 
 .linkActive {
-  color: $teal;
+  background-color: $orange;
 }
 
 @media (max-width: 1120px) {
@@ -62,5 +65,14 @@
 
   .link {
     padding: 0.5rem 0;
+    padding-left: 1rem;
+  }
+}
+
+/* Hide dropdown entirely on larger screens */
+@media (min-width: 1121px) {
+  .menu {
+    display: none !important;
+    transform: translateY(-100%) !important;
   }
 }
