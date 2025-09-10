@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Claudia Trandafirescu",
+    "position": "Fondator si presedinte al asociatiei",
+    "image": "/assets/echipa/claudia-trandafirescu.jpg"
+  },
+  {
+    "name": "Liculescu Florentina",
+    "position": "Fondator si vicepresedinte",
+    "image": "/assets/echipa/liculescu-florentina.jpg"
+  },
+  {
+    "name": "Ada Chivu",
+    "position": "fizioterapeut",
+    "image": "/assets/echipa/ada-chivu.jpg"
+  },
+  {
+    "name": "Cristina Gogoreanu",
+    "position": "fizioterapeut",
+    "image": "/assets/echipa/cristina-gogoreanu.jpg"
+  },
+  {
+    "name": "Cătălina Musteață",
+    "position": "fizioterapeut",
+    "image": "/assets/echipa/catalina-musteata.jpg"
+  },
+  {
+    "name": "Mary Saulea",
+    "position": "voluntar",
+    "image": "/assets/echipa/mary-saulea.png"
+  },
+  {
+    "name": "Simona Pătruț",
+    "position": "voluntar",
+    "image": "/assets/echipa/simona-patrut.png"
+  }
+]

@@ -1,0 +1,53 @@
+@use '../../../styles/globals' as *;
+
+.echipaSection {
+  padding: 4rem 3rem;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.info {
+  flex: 1 1 360px;
+}
+
+.cards {
+  flex: 1 1 520px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: $font-bold;
+}
+
+.content {
+  margin-bottom: 1.5rem;
+  color: #333;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+
+.buttonDark {
+  @include button-dark();
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

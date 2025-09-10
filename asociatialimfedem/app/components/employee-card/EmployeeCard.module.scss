@@ -1,0 +1,32 @@
+@use '../../styles/globals' as *;
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 312px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.position {
+  font-size: 1rem;
+  color: $black;
+}
