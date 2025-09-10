@@ -9,5 +9,55 @@ $font-regular: 'PoppinsRegular', Arial, sans-serif;
 $font-bold: 'PoppinsBold', Arial, sans-serif;
 // Site max content width
 $maxWidth: 1200px;
+// Intermediate font weight
 $font-medium: 'PoppinsMedium', Arial, sans-serif;
+
+// Button mixins for reusable styles
+@mixin button-primary {
+	background: $orange;
+	color: #fff;
+	border: none;
+	border-radius: 9999px;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.3s ease;
+
+	&:hover {
+		background: $black;
+	}
+}
+
+@mixin button-secondary {
+	background: #fff;
+	color: $teal;
+	border: none;
+	border-radius: 9999px;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.3s ease, color 0.3s ease;
+
+	&:hover {
+		background: $black;
+		color: #fff;
+	}
+}
+
+
+@mixin button-dark {
+	background: $black;
+	color: #fff;
+	border: none;
+	border-radius: 9999px;
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background 0.3s ease;
+
+	&:hover {
+		background: white;
+        color: $orange;
+	}
+}
 
