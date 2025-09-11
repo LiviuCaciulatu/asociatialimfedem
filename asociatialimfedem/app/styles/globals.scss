@@ -1,18 +1,17 @@
 @use './fonts' as *;
 
-// Color Palette
 $black: #000000;
 $orange: #EE9C32;
 $teal: #27B6A8;
+$darkGray: #031614;
 
 $font-regular: 'PoppinsRegular', Arial, sans-serif;
 $font-bold: 'PoppinsBold', Arial, sans-serif;
-// Site max content width
-$maxWidth: 1200px;
-// Intermediate font weight
 $font-medium: 'PoppinsMedium', Arial, sans-serif;
 
-// Button mixins for reusable styles
+$maxWidth: 1200px;
+
+
 @mixin button-primary {
 	background: $orange;
 	color: #fff;

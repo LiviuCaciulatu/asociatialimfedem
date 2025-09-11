@@ -7,6 +7,7 @@ import JoinUs from './JoinUs/JoinUs';
 import Gallery from './Gallery/Gallery';
 import Events from './Events/Events';
 import Newsletter from '../Newsletter/Newsletter';
+import Footer from '../footer/Footer';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
   <Gallery />
   <Newsletter />
   <Events />
+  <Footer />
     </main>
   );
 }
