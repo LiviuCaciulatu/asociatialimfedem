@@ -1,0 +1,20 @@
+@use '../../../styles/globals' as *;
+
+.events {
+  padding: 3rem 1rem;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  color: $teal;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}

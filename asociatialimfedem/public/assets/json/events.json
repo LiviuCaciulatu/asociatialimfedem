@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Eveniment Craciun",
+    "description": "Am încheiat și ultimul eveniment din acest an, și anume Atelierul nostru de Crăciun. Suntem recunoscătoare pentru că ați fost alături de noi pe parcursul întregului an, participând la evenimentele de informare organizate de Asociația Pacienților cu Limfedem și la orele noastre de gimnastică medicală.",
+    "image": "/assets/events/craciun/craciun-1.jpg"
+  },
+  {
+    "title": "Eveniment educare pacienti decembrie",
+    "description": " La evenimentul nostru special din data de 15 decembrie, am discutat despre sistemul limfatic, limfedem, gestionarea acestuia și rolul crucial pe care îl joacă îmbrăcămintea de compresie și gimnastica medicală în această luptă.",
+    "image": "/assets/events/decembrie/decembrie-1.jpg"
+  },
+  {
+    "title": "Eveniment informare cadre medicale",
+    "description": "Evenimentul Limfedemul – de la diagnostic la tratament, desfășurat în Râmnicu Sărat, s-a încheiat.Doresc să adresez cele mai sincere mulțumiri invitației onorante a doamnei dr. Giba-Pascutoi Andreea, medic chirurg la Spitalul din Râmnicu Sărat, de a lua parte la evenimentul dedicat diagnosticului și tratamentului limfedemului. A fost o experiență cu adevărat valoroasă și educativă, iar contribuția doamnei dr. Giba-Pascutoi Andreea la organizarea acestui eveniment a fost esențială pentru succesul său.",
+    "image": "/assets/events/informare/informare-1.jpg"
+  },
+  {
+    "title": "Prima tabara pentru copiii cu limfedem primar",
+    "description": " Împărtășim cu voi experiența noastră din CAMP CIORĂPEII MAGICI, prima întâlnire pentru copiii cu limfedem primar. A fost o călătorie incredibilă, plină de învățăminte și momente de neuitat, iar acum, când ne-am întors cu toții acasă, inimile noastre rămân pline de amintiri frumoase.",
+    "image": "/assets/events/tabara-copii/tabara-copii-1.jpg"
+  },
+  {
+    "title": "Ora de gimnastica gratuita pentru pacienti",
+    "description": "Am început a doua sesiune de gimnastică medicală gratuită, oferită pacientelor cu limfedem. Mulțumim Cristina Gogoreanu Fizioterapeut pentru implicare și răbdare.",
+    "image": "/assets/events/gimnastica/gimnastica-1.jpg"
+  }
+]

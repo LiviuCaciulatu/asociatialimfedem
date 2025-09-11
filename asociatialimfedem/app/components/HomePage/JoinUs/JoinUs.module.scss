@@ -40,7 +40,6 @@
     margin: 0 auto;
     display: flex;
     padding: 0rem 2rem;
-  /* Round the block container */
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -58,7 +57,6 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  /* Round left side corners */
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
   overflow: hidden;
@@ -95,7 +93,6 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  /* Round right side corners */
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   overflow: hidden;
