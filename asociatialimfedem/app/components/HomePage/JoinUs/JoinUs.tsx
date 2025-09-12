@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./JoinUs.module.scss";
-import Image from "next/image";
 
 export default function JoinUs() {
   return (
@@ -27,7 +26,7 @@ export default function JoinUs() {
           </Link>
         </div>
         <div className={styles.rightSide}>
-          <Image
+          <img
             src="/assets/png/joinUs-1.png"
             alt="Join us"
             width={500}
@@ -38,13 +37,11 @@ export default function JoinUs() {
       </div>
       <div className={`${styles.block} ${styles.block2}`}>
         <div className={styles.leftSide}>
-          <Image
-            src="/assets/png/joinUs-2.png"
-            alt="Join us"
-            width={500}
-            height={500}
-            className={`${styles.joinImage} ${styles.block2Image}`}
-          />
+            <img
+              src="/assets/png/joinUs-2.png"
+              alt="logo"
+              className={styles.logoAnpc}
+            />
         </div>
         <div className={`${styles.rightSide} ${styles.block2Right}`}>
           <h3 className={styles.blockTitle}>SHARE MISIUNII NOASTRE</h3>
@@ -69,13 +66,11 @@ export default function JoinUs() {
           </Link>
         </div>
         <div className={styles.rightSide}>
-          <Image
-            src="/assets/png/joinUs-3.png"
-            alt="Join us"
-            width={500}
-            height={500}
-            className={styles.joinImage}
-          />
+            <img
+              src="/assets/png/joinUs-3.png"
+              alt="logo"
+              className={styles.logoAnpc}
+            />
         </div>
       </div>
     </section>

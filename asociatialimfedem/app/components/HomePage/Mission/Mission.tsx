@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Image from 'next/image';
 import styles from './Mission.module.scss';
 import Link from 'next/link';
 
@@ -34,13 +33,11 @@ export default function Mission() {
         </Link>
       </div>
       <div className={styles.right}>
-        <Image
-          src="/assets/png/photo-1.png"
-          alt="Pacienți cu limfedem"
-          width={500}
-          height={500}
-          className={styles.image}
-        />
+            <img
+              src="/assets/png/photo-1.png"
+              alt="logo"
+              className={styles.logoAnpc}
+            />
       </div>
     </section>
   );

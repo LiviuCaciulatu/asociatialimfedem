@@ -157,4 +157,21 @@
   .link {
     padding: 0.5rem 0;
   }
+  .logoImg {
+    height: 32px; /* shrink logo a bit */
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 20px;
+  }
+
+  .bar {
+    height: 1.5px;
+  }
+
+  .ctaBtn {
+    padding: 0.35rem 1rem;
+    font-size: 0.85rem;
+  }
 }

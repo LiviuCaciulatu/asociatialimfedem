@@ -50,4 +50,17 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  .info {
+  flex: 0;
 }
+.title{
+  text-align: center;
+}
+.content{
+  text-align: center;
+}
+.buttonDark{
+  display: flex;
+  justify-content: center;
+}
+} 
