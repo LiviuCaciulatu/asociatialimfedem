@@ -25,7 +25,7 @@ export default function Navbar() {
       <div className={styles.logo}>
         <Link href="/">
           <img
-            src="/assets/png/Limfedem_logo_orizontal.png"
+            src="/assets/png/logo-new-wide.png"
             alt="Limfedem Logo"
             className={styles.logoImg}
           />

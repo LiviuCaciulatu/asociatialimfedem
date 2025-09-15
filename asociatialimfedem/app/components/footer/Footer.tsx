@@ -52,7 +52,7 @@ export default function Footer() {
         <div className={styles.center}>
           <div className={styles.brand}>
             <img
-              src="/assets/png/Limfedem_logo_orizontal.png"
+              src="/assets/png/logo-new-wide.png"
               alt="logo"
               className={styles.logo}
             />
