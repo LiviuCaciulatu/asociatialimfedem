@@ -1,0 +1,130 @@
+@use '../../../styles/globals' as *;
+
+.block {
+    max-width: $maxWidth;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0rem 2rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.leftSide,
+.rightSide {
+  flex: 0 0 50%;
+}
+
+.leftSide,
+.rightSide {
+  flex: 0 0 50%;
+}
+
+
+.block1Left {
+  background: $orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.blockTitle {
+  font-family: $font-bold;
+  font-size: 1.8rem;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.blockSubtitle {
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #fff;
+  max-width: 90%;
+}
+
+.blockButton {
+  @include button-dark;
+}
+.block2Right .blockButton {
+  @include button-secondary;
+}
+.block2Right {
+  background: $teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.joinImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.block2Image {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+@media (max-width: 768px) {
+    .ceFacem{
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+    .subtitle{
+        margin-bottom: 1rem;
+        padding: 0 2rem;
+    }
+  .block {
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0;
+    margin: 0;
+  }
+  .block2{
+    flex-direction: column-reverse;
+  }
+  .leftSide,
+  .rightSide {
+    flex: 1 0 auto;
+    width: 100%;
+  }
+  .block1Left {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .joinImage {
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  .block,
+  .block1Left,
+  .block2Right,
+  .block2Image {
+    border-radius: 0;
+  }
+
+  .title{
+    flex-direction: column;
+  }
+}
