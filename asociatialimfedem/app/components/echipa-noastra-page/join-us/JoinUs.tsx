@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './JoinUs.module.scss';
+import Link from 'next/link';
 
 const JoinUs: React.FC = () => {
   return (
@@ -14,6 +15,9 @@ const JoinUs: React.FC = () => {
         <div className={styles.subtitle}>
           Fii parte din schimbare — implică-te astăzi!
         </div>
+                      <Link href="/implica-te">
+          <button className={styles.primaryBtn}>IMPLICA-TE</button>
+        </Link>
       </div>
     </section>
   );
