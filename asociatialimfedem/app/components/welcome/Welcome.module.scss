@@ -1,0 +1,104 @@
+@use '../../styles/globals' as *;
+
+.welcome {
+    margin-top: 2rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+  font-family: $font-regular;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner {
+  max-width: 88vh;
+  margin: 0 auto;
+  text-align: center;
+   padding: 0rem 2rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin: 0 0 0.5rem 0;
+  font-family: $font-bold;
+}
+
+.description {
+  color: #444;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: $orange;
+  font-weight: 700;
+}
+.subsection {
+    margin-top:2rem;
+    background-color: $orange;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subinner {
+    max-width: $maxWidth;
+  background-color: $orange;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+}
+
+.subTitle {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  max-width: 50rem;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.icon{
+    width: 50px;
+    height: 45px;
+    margin-bottom: 1rem;
+    align-self: center;
+    border-radius: 50%;
+    padding: 0.4rem;
+    background-color: white;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.cardDescription {
+  color: white;
+  flex: 1;
+  line-height: 1.4;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .title, .subTitle { font-size: 1.25rem; }
+  .list {
+    flex-direction: column;
+  }
+}

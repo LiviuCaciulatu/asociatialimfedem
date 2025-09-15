@@ -32,6 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .block {
@@ -151,5 +152,9 @@
   .block2Right,
   .block2Image {
     border-radius: 0;
+  }
+
+  .title{
+    flex-direction: column;
   }
 }

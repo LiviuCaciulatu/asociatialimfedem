@@ -15,11 +15,11 @@ export default function HomePage() {
       <HeroSection />
       <Mission />
       <JoinUs />
-  <EchipaMain />
-  <Gallery />
-  <Newsletter />
-  <Events />
-  <Footer />
+      <EchipaMain />
+      <Gallery />
+      <Newsletter />
+      <Events />
+      <Footer />
     </main>
   );
 }
