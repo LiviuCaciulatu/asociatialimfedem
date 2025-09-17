@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './Events.module.scss';
-import EventCard from '../../event-card/EventCard';
+import EventCard from '../event-card/EventCard';
 
 interface EventItem {
   title: string;

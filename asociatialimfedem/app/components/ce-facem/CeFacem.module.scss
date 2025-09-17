@@ -1,11 +1,33 @@
-@use '../../../styles/globals' as *;
+@use '../../styles/globals' as *;
+
+.ceFacem {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-family: $font-regular;
+}
+
+.description{
+    font-size: 1.1rem;
+    gap: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+    max-width: 100vh;
+}
 
 .block {
     max-width: $maxWidth;
     width: 100%;
     margin: 0 auto;
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* ensure children stretch to same height */
     padding: 0rem 2rem;
+    /* baseline min-height so blocks visually match when one column has more content */
+    min-height: 360px;
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -13,11 +35,21 @@
 .leftSide,
 .rightSide {
   flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* allow content to grow and make columns equal height */
 }
 
-.leftSide,
-.rightSide {
-  flex: 0 0 50%;
+/* Ensure images inside the right column fill the full column height and crop to fit */
+.rightSide img,
+.rightSide .joinImage,
+.rightSide .logoAnpc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  flex: 1 1 auto; /* allow the image to grow to fill the column */
 }
 
 
@@ -34,7 +66,21 @@
   color: #fff;
 }
 
-.blockTitle {
+.blockTitleOrange{
+  background-color: $orange;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.blockTitleTeal{
+  background-color: $teal;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.blockSubTitle {
   font-family: $font-bold;
   font-size: 1.8rem;
   color: black;
@@ -42,10 +88,10 @@
   text-align: center;
 }
 
-.blockSubtitle {
-  font-size: 1.7rem;
+.blockDescription {
+  font-size: 1.3rem;
   line-height: 1;
-  margin-bottom: 1.5rem;
+
   text-align: center;
   color: #fff;
   max-width: 90%;
@@ -63,7 +109,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   overflow: hidden;
@@ -72,8 +118,10 @@
 
 .joinImage {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* crop to fill */
+  display: block;
+
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
 }
@@ -100,6 +148,7 @@
     padding: 1.5rem;
     border-radius: 0;
     margin: 0;
+    min-height: auto; /* allow natural height on small screens */
   }
   .block2{
     flex-direction: column-reverse;

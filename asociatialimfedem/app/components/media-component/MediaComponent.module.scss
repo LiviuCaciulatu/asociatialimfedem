@@ -1,0 +1,63 @@
+@use '../../styles/globals' as *;
+
+.media {
+  padding: 2rem 1rem;
+}
+
+.inner {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  text-align: center;
+    font-family: $font-regular;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.title {
+  font-family: $font-bold;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.embedWrap {
+  display: block;
+  max-width: 100%;
+  width: 560px;
+  margin: 0 auto 1rem auto;
+  position: relative;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.fallback {
+  color: #444;
+}
+
+.link {
+  color: $orange;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .embedWrap {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .video { padding: 1rem 0; }
+}

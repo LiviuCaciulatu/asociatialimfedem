@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './EchipaLimfedem.module.scss';
-import EmployeeCard from '../../employee-card/EmployeeCard';
+import EmployeeCard from '../employee-card/EmployeeCard';
 import Link from 'next/link';
 
 interface Employee {

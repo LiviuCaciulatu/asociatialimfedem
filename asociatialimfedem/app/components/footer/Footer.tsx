@@ -35,7 +35,7 @@ export default function Footer() {
               <Link href="/">Acasă</Link>
             </li>
             <li>
-              <Link href="/despre">Despre noi</Link>
+              <Link href="/despr-noi">Despre noi</Link>
             </li>
             <li>
               <Link href="/echipa-noastra">Echipa</Link>
