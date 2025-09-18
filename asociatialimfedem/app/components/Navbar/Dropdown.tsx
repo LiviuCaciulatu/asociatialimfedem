@@ -7,9 +7,10 @@ import styles from './Dropdown.module.scss';
 interface DropdownProps {
   pages: { name: string; path: string }[];
   isOpen: boolean;
+  onClose?: () => void;
 }
 
-export default function Dropdown({ pages, isOpen }: DropdownProps) {
+export default function Dropdown({ pages, isOpen, onClose }: DropdownProps) {
   const pathname = usePathname();
   return (
     <div className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
@@ -19,6 +20,7 @@ export default function Dropdown({ pages, isOpen }: DropdownProps) {
             <Link
               href={page.path}
               className={`${styles.link} ${pathname === page.path ? styles.linkActive : ''}`}
+              onClick={() => onClose && onClose()}
             >
               {page.name}
             </Link>

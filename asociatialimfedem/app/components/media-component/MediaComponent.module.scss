@@ -21,22 +21,30 @@
 }
 
 .embedWrap {
-  display: block;
-  max-width: 100%;
-  width: 560px;
-  margin: 0 auto 1rem auto;
+  /* responsive aspect-ratio wrapper (16:9) */
   position: relative;
-  display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto 1rem auto;
+  padding-top: calc(9 / 16 * 100%);
+  overflow: hidden;
+}
+
+.embedWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem; /* reduce padding to avoid extra gaps */
 }
 
 .fallback {
@@ -52,11 +60,6 @@
   .inner {
     flex-direction: column;
     padding: 0 1rem;
-  }
-
-  .embedWrap {
-    width: 100%;
-    margin-bottom: 1rem;
   }
 
   .video { padding: 1rem 0; }

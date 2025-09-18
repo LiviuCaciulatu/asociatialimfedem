@@ -1,0 +1,64 @@
+@use '../../styles/globals' as *;
+
+.contacts {
+  padding: 2rem 1rem;
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: $font-bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardTitle {
+  font-family: $font-bold;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardLink {
+    font-size: 1.1rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.cardSubTitle{
+    font-size: 1.1rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.highlight {
+  color: $teal;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

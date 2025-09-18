@@ -162,6 +162,9 @@
 }
 
 @media (max-width: 900px) {
+  .footer {
+    padding: 1rem;
+  }
   .container {
     grid-template-columns: 1fr;
     gap: 1rem;

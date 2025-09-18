@@ -59,7 +59,7 @@ export default function Navbar() {
             </>
           )}
         </button>
-        <Dropdown pages={pages} isOpen={isOpen} />
+        <Dropdown pages={pages} isOpen={isOpen} onClose={() => setIsOpen(false)} />
       </div>
       <div className={styles.cta}>
         <Link href="/implica-te">

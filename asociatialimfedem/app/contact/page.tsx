@@ -1,5 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/footer/Footer";
+import Contacts from "../components/contacts/Contacts";
+import ContactForm from "../components/contact-form/ContactForm";
 
 export default function Page() {
   return (
@@ -11,6 +13,8 @@ export default function Page() {
         // buttonText="CONTACTEAZĂ-NE"
         // buttonHref="/contact"
         backgroundImage="/assets/jpg/background-1.jpg"/>
+  <Contacts />
+  <ContactForm />
       <Footer />
     </>
   );
