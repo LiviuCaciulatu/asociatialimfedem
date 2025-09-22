@@ -1,10 +1,26 @@
 @use '../../styles/globals' as *;
 
 .footer {
+  --bg-image-opacity: 0.3;
+  position: relative;
   background: $darkGray;
   color: #fff;
   padding: 2rem 3rem;
   font-family: $font-regular;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/png/logo-simbol.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: var(--bg-image-opacity);
+    pointer-events: none;
+    z-index: 1;
+  }
 }
 
 .container {
@@ -15,6 +31,8 @@
   grid-template-columns: 1fr minmax(260px, 480px) 1fr;
   gap: 1.5rem 2rem;
   align-items: start;
+  position: relative;
+  z-index: 2;
 }
 
 .left {

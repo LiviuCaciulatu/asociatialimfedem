@@ -52,7 +52,7 @@ export default function Footer() {
         <div className={styles.center}>
           <div className={styles.brand}>
             <img
-              src="/assets/png/logo-new-wide.png"
+              src="/assets/png/logo-orizontal.png"
               alt="logo"
               className={styles.logo}
             />

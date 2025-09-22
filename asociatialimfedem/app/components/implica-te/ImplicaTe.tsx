@@ -12,7 +12,7 @@ const ImplicaTe: React.FC = () => {
         <div className={styles.card}>
           <h3 className={styles.cardTitle}>Persoane fizice</h3>
           <p>Vezi mai multe informații despre completarea formularului 230.</p>
-          <Link className={styles.button} href="/implica-te#voluntar">
+          <Link className={styles.button} href="/formular-230">
             VEZI DETALII
           </Link>
         </div>
@@ -40,9 +40,9 @@ const ImplicaTe: React.FC = () => {
         <div className={styles.card}>
           <h3 className={styles.cardTitle}>Donează online</h3>
 
-          <Link className={styles.button} href="/evenimente">
+          <a className={styles.button} href="https://pay.galantom.ro/donation_forms/view?id=94" target="_blank" rel="noopener noreferrer">
             Realizeaza o donatie online
-          </Link>
+          </a>
         </div>
       </div>
     </section>
