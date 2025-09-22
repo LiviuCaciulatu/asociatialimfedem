@@ -22,7 +22,7 @@ const ImplicaTe: React.FC = () => {
           <p>
            Redirecționează în 3 pași simpli!
           </p>
-          <Link className={styles.button} href="/donate">
+          <Link className={styles.button} href="/redirectionare-impozit">
             VEZI DETALII
           </Link>
         </div>

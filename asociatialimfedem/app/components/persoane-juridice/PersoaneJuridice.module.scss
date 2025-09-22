@@ -1,0 +1,86 @@
+@use "../../styles/globals" as *;
+
+.wrapper {
+  padding: 2rem 1rem;
+  max-width: $maxWidth;
+  margin: 0 auto;
+  text-align: center;
+  font-family: $font-regular;
+}
+
+.title {
+  font-family: $font-bold;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  min-height: 120px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+    background-color: $orange;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.cardTitle{
+    font-family: $font-bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: $teal;
+}
+
+.cardDescription{
+  font-size: 1.1rem;
+  min-height: 120px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.primary {
+  @include button-primary;
+  padding: 0.8rem 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1.5rem 0.75rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    min-height: 80px;
+  }
+  .actions {
+    padding-top: 0.5rem;
+  }
+  .primary {
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.25rem;
+  }
+  .description {
+    min-height: 60px;
+    font-size: 0.95rem;
+  }
+}
