@@ -19,6 +19,7 @@
   min-height: 120px;
   margin-bottom: 2rem;
   text-align: center;
+  padding: 0rem 6rem;
 }
 
 .highlight {
@@ -30,25 +31,54 @@
   justify-content: center;
 }
 
-.card{
-    background-color: $orange;
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
+.card {
+  background-color: $orange;
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 4rem 7rem;
 }
 
-.cardTitle{
-    font-family: $font-bold;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    background-color: $teal;
+.cardTitle {
+  font-family: $font-bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: $teal;
+  	border-radius: 9999px;
 }
 
-.cardDescription{
+.cardDescription {
   font-size: 1.1rem;
   min-height: 120px;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.cardLink {
+  font-size: 1.1rem;
+  text-decoration: underline;
+  color: $teal;
+}
+
+.title {
+  margin-top: 3rem;
+  color: $teal;
+  font-family: $font-bold;
+}
+
+.subTitle {
+  font-family: $font-bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.content{
+  margin-bottom: 3rem;
+}
+
+.cardBtn{
+  @include button-dark;
 }
 
 .primary {
