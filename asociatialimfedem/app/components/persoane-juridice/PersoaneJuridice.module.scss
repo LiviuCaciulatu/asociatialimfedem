@@ -58,6 +58,12 @@
   font-size: 1.1rem;
   text-decoration: underline;
   color: $teal;
+    word-break: break-word;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+  display: inline;
 }
 
 .title {
@@ -95,6 +101,8 @@
   }
   .description {
     min-height: 80px;
+    padding: 0 1rem;
+    text-align: center;
   }
   .actions {
     padding-top: 0.5rem;
@@ -102,6 +110,17 @@
   .primary {
     width: 100%;
     display: inline-block;
+  }
+  .card {
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+  }
+  .cardDescription {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .cardTitle {
+    font-size: 1.25rem;
   }
 }
 
@@ -111,6 +130,12 @@
   }
   .description {
     min-height: 60px;
+    font-size: 0.95rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .cardDescription {
     font-size: 0.95rem;
   }
 }

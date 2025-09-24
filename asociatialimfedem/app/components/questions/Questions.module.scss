@@ -5,8 +5,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   font-family: $font-regular;
+  max-width: 100%;
 }
 
 .title {
@@ -17,7 +18,8 @@
 }
 
 .list {
-  width: $maxWidth;
+  width: 100%;
+  max-width: $maxWidth;
   list-style: none;
   margin: 0;
   padding: 0rem 6rem;
@@ -41,6 +43,9 @@
   align-items: center;
   gap: 0.75rem;
   color: $orange;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .sign {
@@ -75,17 +80,22 @@
 }
 
 .actions {
-  @include button-primary;
-  scale: 1.5;
+  display: flex;
+  justify-content: center;
   margin: 3rem 0rem;
+}
+
+.primary {
+  @include button-primary;
+  display: inline-block;
+  width: auto;
+  padding: 0.6rem 1rem;
+  scale: 1.5;
 }
 
 .link {
   color: $orange;
   text-decoration: underline;
-  &:hover {
-    color: darken($orange, 10%);
-  }
 }
 
 .questionOpen {
@@ -94,4 +104,57 @@
 
 .highlight{
   font-family: $font-bold;
+}
+
+/* Ensure long links wrap instead of causing horizontal scroll */
+.answer a,
+.link {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .list {
+    padding: 0 0.75rem;
+  }
+  .question {
+    font-size: 1.05rem;
+    gap: 0.5rem;
+  }
+  .sign {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 0.95rem;
+  }
+  .answer {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .question {
+    font-size: 1rem;
+  }
+  .sign {
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.85rem;
+  }
+  .list {
+    padding: 0 0.5rem;
+  }
 }
