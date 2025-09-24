@@ -29,7 +29,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <h4>Meniu rapid</h4>
+          <h4 className={styles.title}>Meniu rapid</h4>
           <ul className={styles.list}>
             <li>
               <Link href="/">Acasă</Link>
@@ -107,7 +107,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.right}>
-          <h4 className={styles.titleRight}>Link-uri utile</h4>
+          <h4 className={styles.title}>Link-uri utile</h4>
           <ul className={styles.list}>
             <li>
               <Link href="/implica-te">Implică-te</Link>
@@ -126,8 +126,8 @@ export default function Footer() {
             </li>
           </ul>
           <div className={styles.social}>
-            <a href="#" aria-label="Facebook">
-              FB
+            <a href="https://www.facebook.com/people/Asocia%C8%9Bia-pacien%C8%9Bilor-cu-limfedem/100090613821011/" aria-label="Facebook">
+              <img src="/assets/png/fb-logo.png" alt="Facebook" />
             </a>
           </div>
         </div>
