@@ -10,6 +10,7 @@ const pages = [
   { name: 'DESPRE NOI', path: '/despre-noi' },
   { name: 'ECHIPĂ', path: '/echipa-noastra' },
   { name: 'DESPRE LIMFEDEM', path: '/despre-limfedem' },
+  { name: 'SIMULATOR', path: '/simulator' },
   { name: 'CE FACEM', path: '/ce-facem' },
   { name: 'MEDIA', path: '/media' },
   { name: 'BLOG', path: '/blog' },

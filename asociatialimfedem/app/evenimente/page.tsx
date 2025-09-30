@@ -8,9 +8,6 @@ export default function Page() {
     <>
       <Hero 
         title="EVENIMENTE"
-        // description="Participă la evenimentele noastre și alătură-te luptei împotriva limfedemului."
-        // buttonText="ÎNREGISTREAZĂ-TE"
-        // buttonHref="/inregistrare"
         backgroundImage="/assets/jpg/background-1.jpg"/>
       <Events />
       <Newsletter />

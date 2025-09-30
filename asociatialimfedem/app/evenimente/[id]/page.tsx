@@ -22,7 +22,6 @@ export async function generateStaticParams() {
 export default async function EventPage({ params }: Params) {
   const file = path.join(process.cwd(), 'public', 'assets', 'json', 'events.json');
   const events = JSON.parse(fs.readFileSync(file, 'utf8')) as Event[];
-  // `params` can be a Promise-like object in some Next.js runtimes — await it first.
   const { id } = (await params) || {};
   if (!id) {
     return <main style={{ padding: 40 }}><h1>Invalid request (missing id)</h1></main>;
