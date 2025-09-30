@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import EventDetail from '../../components/event-detail/EventDetail';
 
-type Params = { params: { id: string } };
+type Params = { params: any };
 
 type Event = {
   id: string;
@@ -19,11 +19,11 @@ export async function generateStaticParams() {
   return events.map((e) => ({ id: e.id }));
 }
 
-export default function EventPage({ params }: Params) {
+export default async function EventPage({ params }: Params) {
   const file = path.join(process.cwd(), 'public', 'assets', 'json', 'events.json');
   const events = JSON.parse(fs.readFileSync(file, 'utf8')) as Event[];
-  // Defensive: params may be undefined in some environments; guard access.
-  const id = params?.id;
+  // `params` can be a Promise-like object in some Next.js runtimes — await it first.
+  const { id } = (await params) || {};
   if (!id) {
     return <main style={{ padding: 40 }}><h1>Invalid request (missing id)</h1></main>;
   }

@@ -9,7 +9,7 @@ import Lightbox from "../lightbox/Lightbox";
 type Event = {
   id: string;
   title: string;
-  description?: string;
+  description?: string | string[];
   image?: string;
   images?: string[];
 };
@@ -44,19 +44,29 @@ const EventDetail: React.FC<{ event: Event }> = ({ event }) => {
       </header>
 
       <div className={styles.content}>
-        <p className={styles.description}>{event.description}</p>
+        <div className={styles.description}>
+          {Array.isArray(event.description)
+            ? event.description.map((p, i) => (
+                <div
+                  key={i}
+                  className={styles.paragraph}
+                  dangerouslySetInnerHTML={{ __html: p ?? "" }}
+                />
+              ))
+            : (
+                <div dangerouslySetInnerHTML={{ __html: (event.description as string) ?? "" }} />
+              )}
+        </div>
         {gallery.length > 0 && (
           <div className={styles.gallery}>
             {gallery.map((src, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={i}
-                src={src}
-                alt={`${event.title} ${i + 1}`}
-                className={styles.galleryImage}
-                onClick={() => openAt(i)}
-                style={{ cursor: 'pointer' }}
-              />
+              <div key={i} className={styles.galleryItem} onClick={() => openAt(i)}>
+                <img
+                  src={src}
+                  alt={`${event.title} ${i + 1}`}
+                  className={styles.galleryImage}
+                />
+              </div>
             ))}
           </div>
         )}

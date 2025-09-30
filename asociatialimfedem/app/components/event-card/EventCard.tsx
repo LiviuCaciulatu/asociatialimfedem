@@ -9,7 +9,7 @@ interface EventCardProps {
   date?: string;
   location?: string;
   image?: string;
-  description?: string;
+  description?: string | string[];
   href?: string;
   id?: string;
   onClick?: () => void;
@@ -32,7 +32,26 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, des
             {location && <span className={styles.location}>{location}</span>}
           </div>
         )}
-        {description && <p className={styles.description}>{description}</p>}
+        {description && (
+          (() => {
+            // If description is an array, pick the first non-empty paragraph for the card teaser
+            if (Array.isArray(description)) {
+              const first = description.find((d) => d && d.trim() !== "") || "";
+              return (
+                <div
+                  className={styles.description}
+                  dangerouslySetInnerHTML={{ __html: first }}
+                />
+              );
+            }
+
+            // If it's a string, render a truncated plain-text teaser to avoid layout issues
+            const asString = description as string;
+            const plain = asString.replace(/<[^>]+>/g, "");
+            const teaser = plain.length > 140 ? plain.slice(0, 137) + "..." : plain;
+            return <p className={styles.description}>{teaser}</p>;
+          })()
+        )}
         <div className={styles.footer}>
           {href || id ? (
             <Link href={href ?? `/evenimente/${id}/`} className={styles.cta}>
