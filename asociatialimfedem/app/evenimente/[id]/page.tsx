@@ -2,12 +2,12 @@ import fs from 'fs';
 import path from 'path';
 import EventDetail from '../../components/event-detail/EventDetail';
 
-type Params = { params: any };
+type Params = { params: { id: string } };
 
 type Event = {
   id: string;
   title: string;
-  description?: string;
+  description?: string | string[];
   image?: string;
   images?: string[];
 };
@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 export default async function EventPage({ params }: Params) {
   const file = path.join(process.cwd(), 'public', 'assets', 'json', 'events.json');
   const events = JSON.parse(fs.readFileSync(file, 'utf8')) as Event[];
-  const { id } = (await params) || {};
+  const { id } = params || {};
   if (!id) {
     return <main style={{ padding: 40 }}><h1>Invalid request (missing id)</h1></main>;
   }

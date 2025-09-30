@@ -27,7 +27,9 @@
       "🟢Împreună, devenim o comunitate puternică și dedicată să aducem mai multă înțelegere și sprijin celor afectați de limfedem. #limfedemsecundar #limfedemprimar #lipedem #gestionamlimfedemul #asociatiapacientilorculimfedem"
     ],
     "image": "/assets/events/decembrie/decembrie-1.jpg",
-    "images": ["/assets/events/decembrie/decembrie-1.jpg"]
+    "images": [
+      "/assets/events/decembrie/decembrie-1.jpg"
+    ]
   },
   {
     "title": "Eveniment informare cadre medicale",
@@ -40,7 +42,9 @@
       "#limfedem #lifedemsecundar #limfedemprimar #gestionarelimfedem #diagnosticlimfedem"
     ],
     "image": "/assets/events/informare/informare-1.jpg",
-    "images": ["/assets/events/informare/informare-1.jpg"]
+    "images": [
+      "/assets/events/informare/informare-1.jpg"
+    ]
   },
   {
     "title": "Prima tabara pentru copiii cu limfedem primar",
@@ -54,7 +58,9 @@
       "💚💜 Informația este esențială și numai împreună putem gestiona limfedemul. <br/>#asociatiapacientilorculimfedem <br/> #limfedemprimar <br/> #gestionarelimfedem <br/> #zileleciorapeilormagici</p><br/>"
     ],
     "image": "/assets/events/tabara-copii/tabara-copii-1.jpg",
-    "images": ["/assets/events/tabara-copii/tabara-copii-1.jpg"]
+    "images": [
+      "/assets/events/tabara-copii/tabara-copii-1.jpg"
+    ]
   },
   {
     "title": "Ora de gimnastica gratuita pentru pacienti",
@@ -69,6 +75,8 @@
       "🌺 Să aveți spor la exerciții fizice și să purtați zilnic îmbrăcămintea de compresie pentru o stare de bine."
     ],
     "image": "/assets/events/gimnastica/gimnastica-1.jpg",
-    "images": ["/assets/events/gimnastica/gimnastica-1.jpg"]
+    "images": [
+      "/assets/events/gimnastica/gimnastica-1.jpg"
+    ]
   }
 ]
