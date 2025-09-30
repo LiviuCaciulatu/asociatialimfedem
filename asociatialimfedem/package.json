@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "prebuild": "npm run update:events",
   "build": "next build --turbopack",
   "export": "next export",
+    "update:events": "node scripts/update-event-images.js",
     "start": "next start",
     "lint": "eslint"
   },

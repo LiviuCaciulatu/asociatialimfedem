@@ -8,6 +8,7 @@ interface EventItem {
   title: string;
   description: string;
   image: string;
+  id: string;
 }
 
 const Events: React.FC = () => {
@@ -26,9 +27,10 @@ const Events: React.FC = () => {
     <section className={styles.events}>
       <h3 className={styles.title}>Evenimente</h3>
       <div className={styles.grid}>
-        {items.map((it, idx) => (
+        {items.map((it) => (
           <EventCard
-            key={idx}
+            key={it.id}
+            id={it.id}
             title={it.title}
             description={it.description}
             image={it.image}

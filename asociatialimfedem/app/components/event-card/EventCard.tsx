@@ -10,11 +10,12 @@ interface EventCardProps {
   location?: string;
   image?: string;
   description?: string;
-  href?: string; // optional link to event page
+  href?: string;
+  id?: string;
   onClick?: () => void;
 }
 
-const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, description, href, onClick }) => {
+const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, description, href, id, onClick }) => {
   const content = (
     <div className={styles.card}>
       {image && (
@@ -33,8 +34,8 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, des
         )}
         {description && <p className={styles.description}>{description}</p>}
         <div className={styles.footer}>
-          {href ? (
-            <Link href={href} className={styles.cta}>
+          {href || id ? (
+            <Link href={href ?? `/evenimente/${id}/`} className={styles.cta}>
               Citeste mai departe...
             </Link>
           ) : (

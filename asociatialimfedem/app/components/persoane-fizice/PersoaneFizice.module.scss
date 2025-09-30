@@ -1,8 +1,9 @@
 @use "../../styles/globals" as *;
+@use "sass:math";
 
 .wrapper {
   padding: 2rem 1rem;
-  max-width: $maxWidth/1.4;
+  max-width: math.div($maxWidth, 1.4);
   margin: 0 auto;
   text-align: center;
   font-family: $font-regular;
