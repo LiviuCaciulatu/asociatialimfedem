@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CALCULATOR VOLUM BRAT</title>
+  <style>
+    :root {
+      --bg: #f7fafb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #1e90ff;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text); background: var(--bg);
+    }
+    .container { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    header h1 { margin: 0 0 8px; font-size: clamp(1.4rem, 1.2rem + 1vw, 2rem); }
+    header p { margin: 0; color: var(--muted); }
+
+    .card { background: var(--card); border-radius: var(--radius); box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06); padding: 20px; }
+    .grid { display: grid; gap: 16px; }
+    .grid-2 { grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .grid-2 { grid-template-columns: 1.2fr 1fr; } }
+
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .controls label { font-weight: 600; }
+    input[type="number"] { width: 100%; padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 12px; font-size: 16px; }
+    input[type="number"]:focus { outline: 2px solid rgba(30,144,255,.25); border-color: var(--accent); }
+
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 10px; border-bottom: 1px solid #eef2f7; text-align: left; }
+    thead th { background: #f3f7fb; font-weight: 700; }
+    tbody tr:hover { background: #fafcff; }
+
+    .btn { appearance: none; border: none; background: var(--accent); color: white; padding: 10px 14px; border-radius: 12px; font-weight: 600; cursor: pointer; }
+    .btn.secondary { background: #111827; }
+    .btn.ghost { background: transparent; color: var(--text); border: 1px solid #e5e7eb; }
+    .btn:disabled { opacity: .6; cursor: not-allowed; }
+
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    @media (min-width: 720px) { .cards { grid-template-columns: repeat(4, 1fr); } }
+    .metric { background: var(--card); border-radius: 14px; padding: 16px; border: 1px solid #eef2f7; }
+    .metric h4 { margin: 0 0 6px; font-size: .95rem; color: var(--muted); font-weight: 600; }
+    .metric .value { font-size: 1.4rem; font-weight: 800; }
+
+    .hint { color: var(--muted); font-size: .95rem; }
+    .note { font-size: .95rem; color: var(--muted); }
+    .pill { display:inline-block; padding: 2px 10px; border-radius: 999px; font-size: .8rem; font-weight: 700; }
+    .pill.ok { background: #ecfdf5; color: #065f46; }
+    .pill.warn { background: #fffbeb; color: #92400e; }
+    .pill.danger { background: #fef2f2; color: #991b1b; }
+
+    footer { margin-top: 22px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>CALCULATOR VOLUM BRAT</h1>
+      <p>Introduceți circumferințele (cm) la <strong>A, B, C, D, E, F</strong> pentru ambele brațe. Rezultatele se actualizează automat. Prietenos cu telefonul 📱</p>
+    </header>
+
+    <section class="grid grid-2" style="margin-top: 18px;">
+      <div class="card">
+        <div class="controls" style="margin-bottom: 10px; gap: 12px;">
+          <label for="h">Distanța între marcaje h (cm):</label>
+          <input id="h" type="number" step="0.1" inputmode="decimal" value="7" style="max-width: 120px;" aria-label="Distanța dintre puncte în centimetri" />
+          <span class="hint">Implicit 7 cm (A→B→C→D→E→F la fiecare 7 cm).</span>
+        </div>
+
+        <div class="grid" style="gap: 18px;">
+          <div style="overflow-x:auto;">
+            <table aria-label="Tabel măsurători circumferințe">
+              <thead>
+                <tr>
+                  <th>Punct</th>
+                  <th>Dreapta (cm)</th>
+                  <th>Stânga (cm)</th>
+                </tr>
+              </thead>
+              <tbody id="table-inputs"></tbody>
+            </table>
+          </div>
+
+          <div class="controls" style="gap: 10px;">
+            <button class="btn" id="btn-save">Salvează datele</button>
+            <button class="btn ghost" id="btn-load">Încarcă salvarea</button>
+            <button class="btn secondary" id="btn-reset">Resetează</button>
+            <button class="btn ghost" id="btn-export">Exportă CSV</button>
+          </div>
+          <p class="note">Sfat: măsoară la aceeași oră a zilei, fără a strânge centimetrul. Scoate bijuteriile. Măsurătorile sunt în cm.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="overflow-x:auto;">
+          <table aria-label="Rezultate pe segmente" id="table-segments">
+            <thead>
+              <tr>
+                <th>Segment</th>
+                <th>C dreapta (cm)</th>
+                <th>c dreapta (cm)</th>
+                <th>Volum segment dreapta (mL)</th>
+                <th>C stânga (cm)</th>
+                <th>c stânga (cm)</th>
+                <th>Volum segment stânga (mL)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top: 18px;">
+      <div class="cards">
+        <div class="metric">
+          <h4>Total dreapta (mL)</h4>
+          <div class="value" id="total-right">0.0</div>
+        </div>
+        <div class="metric">
+          <h4>Total stânga (mL)</h4>
+          <div class="value" id="total-left">0.0</div>
+        </div>
+        <div class="metric">
+          <h4>Diferență absolută (mL)</h4>
+          <div class="value" id="diff-abs">0.0</div>
+        </div>
+        <div class="metric">
+          <h4>Diferență relativă (%)</h4>
+          <div class="value" id="diff-pct">0.0%</div>
+        </div>
+      </div>
+      <p style="margin-top:10px;">
+        <span id="flag-pill" class="pill">—</span>
+        <span class="hint">Repere orientative: o diferență ≥ <strong>200 mL</strong> sau ≥ <strong>10%</strong> poate fi semnificativă clinic și merită discutată cu terapeutul/medicul.</span>
+      </p>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+      <h3 style="margin-top:0">Cum măsori (pe scurt)</h3>
+      <ol>
+        <li>Marchează punctul <strong>A</strong> la încheietură (nivelul oaselor stiloide). Din <strong>7 cm</strong> în <strong>7 cm</strong> proximal: <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong>.</li>
+        <li>Ține banda orizontal, lipită de piele, <em>fără a strânge</em>. Măsoară în cm fiecare punct, pe <strong>ambele</strong> brațe.</li>
+        <li>Introduce valorile și verifică rezultatele. Volumul total al fiecărui braț este suma segmentelor (A–B, B–C, …, E–F) calculate cu formula:<br>
+          <code>V = h · (C² + C·c + c²) / (12 · π)</code>
+        </li>
+      </ol>
+      <p class="note">Acest instrument este pentru auto-monitorizare. Nu înlocuiește evaluarea clinică. Dacă observi o creștere susținută a volumului sau simptome noi, caută un fizioterapeut specializat în limfedem. Ești mai mult decât cifrele ♥️</p>
+    </section>
+
+    <footer>
+      <small>Versiune locală, datele rămân în dispozitiv. Poți exporta CSV pentru a le trimite terapeutului.</small>
+    </footer>
+  </main>
+
+  <script>
+    const POINTS = ["A","B","C","D","E","F"];
+    const SEGMENTS = [["A","B"],["B","C"],["C","D"],["D","E"],["E","F"]];
+    const STORAGE_KEY = "limfedem_calc_brat_AF_v1";
+
+    const $ = (q) => document.querySelector(q);
+
+    function buildInputsTable() {
+      const tbody = document.getElementById('table-inputs');
+      tbody.innerHTML = '';
+      POINTS.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${p}</strong></td>
+          <td><input type="number" step="0.1" inputmode="decimal" aria-label="Dreapta ${p}" id="r-${p}"/></td>
+          <td><input type="number" step="0.1" inputmode="decimal" aria-label="Stânga ${p}" id="l-${p}"/></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function buildSegmentsTable() {
+      const tbody = document.querySelector('#table-segments tbody');
+      tbody.innerHTML = '';
+      SEGMENTS.forEach(([p1,p2]) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><strong>${p1}–${p2}</strong></td>
+          <td id="srC-${p1}${p2}">–</td>
+          <td id="src-${p1}${p2}">–</td>
+          <td id="svr-${p1}${p2}">0.0</td>
+          <td id="slC-${p1}${p2}">–</td>
+          <td id="slc-${p1}${p2}">–</td>
+          <td id="svl-${p1}${p2}">0.0</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function num(v) {
+      const n = parseFloat(v);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function fmt(v, digits = 1) {
+      return Number.isFinite(v) ? v.toFixed(digits) : '0.0';
+    }
+
+    function compute() {
+      const h = num($('#h').value) ?? 7;
+
+      const R = {}, L = {};
+      POINTS.forEach(p => {
+        R[p] = num($('#r-' + p).value);
+        L[p] = num($('#l-' + p).value);
+      });
+
+      let totalR = 0, totalL = 0;
+
+      SEGMENTS.forEach(([p1,p2]) => {
+        const Cr = R[p1], cr = R[p2];
+        const Cl = L[p1], cl = L[p2];
+
+        const rCEl = document.getElementById(`srC-${p1}${p2}`);
+        const rcEl = document.getElementById(`src-${p1}${p2}`);
+        const vrEl = document.getElementById(`svr-${p1}${p2}`);
+        const lCEl = document.getElementById(`slC-${p1}${p2}`);
+        const lcEl = document.getElementById(`slc-${p1}${p2}`);
+        const vlEl = document.getElementById(`svl-${p1}${p2}`);
+
+        rCEl.textContent = Number.isFinite(Cr) ? fmt(Cr) : '–';
+        rcEl.textContent = Number.isFinite(cr) ? fmt(cr) : '–';
+        lCEl.textContent = Number.isFinite(Cl) ? fmt(Cl) : '–';
+        lcEl.textContent = Number.isFinite(cl) ? fmt(cl) : '–';
+
+        let Vr = 0, Vl = 0;
+        if (Number.isFinite(Cr) && Number.isFinite(cr)) {
+          Vr = h * (Cr*Cr + Cr*cr + cr*cr) / (12 * Math.PI);
+          totalR += Vr;
+        }
+        if (Number.isFinite(Cl) && Number.isFinite(cl)) {
+          Vl = h * (Cl*Cl + Cl*cl + cl*cl) / (12 * Math.PI);
+          totalL += Vl;
+        }
+        vrEl.textContent = fmt(Vr);
+        vlEl.textContent = fmt(Vl);
+      });
+
+      $('#total-right').textContent = fmt(totalR);
+      $('#total-left').textContent = fmt(totalL);
+
+      const diffAbs = Math.abs(totalR - totalL);
+      const base = Math.max(totalR, totalL, 0);
+      const diffPct = base > 0 ? (diffAbs / base * 100) : 0;
+      $('#diff-abs').textContent = fmt(diffAbs);
+      $('#diff-pct').textContent = `${fmt(diffPct)}%`;
+
+      // traffic-light style hint
+      const pill = document.getElementById('flag-pill');
+      pill.textContent = 'Estimare diferență';
+      pill.className = 'pill';
+      if (diffAbs >= 200 || diffPct >= 10) {
+        pill.classList.add('danger');
+      } else if ((diffAbs >= 100 && diffAbs < 200) || (diffPct >= 5 && diffPct < 10)) {
+        pill.classList.add('warn');
+      } else {
+        pill.classList.add('ok');
+      }
+    }
+
+    function saveLocal(manual = false) {
+      const data = { h: $('#h').value, right: {}, left: {} };
+      POINTS.forEach(p => {
+        data.right[p] = $('#r-' + p).value || '';
+        data.left[p]  = $('#l-' + p).value || '';
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      if (manual) {
+        const btn = document.getElementById('btn-save');
+        const old = btn.textContent;
+        btn.textContent = 'Salvat ✔';
+        setTimeout(() => { btn.textContent = old; }, 1200);
+      }
+    }
+
+    function loadLocal() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      try {
+        const data = JSON.parse(raw);
+        if (data.h != null) $('#h').value = data.h;
+        POINTS.forEach(p => {
+          const rv = data.right?.[p] ?? '';
+          const lv = data.left?.[p] ?? '';
+          $('#r-' + p).value = rv;
+          $('#l-' + p).value = lv;
+        });
+      } catch {}
+      compute();
+    }
+
+    function resetAll() {
+      $('#h').value = 7;
+      POINTS.forEach(p => {
+        $('#r-' + p).value = '';
+        $('#l-' + p).value = '';
+      });
+      compute();
+      saveLocal();
+    }
+
+    function exportCSV() {
+      const h = $('#h').value;
+      let csv = '"Calculator volum brat – A–F"\n';
+      csv += `"h (cm)",${h}\n\n`;
+      csv += '"Punct","Dreapta (cm)","Stanga (cm)"\n';
+      POINTS.forEach(p => {
+        const r = $('#r-' + p).value || '';
+        const l = $('#l-' + p).value || '';
+        csv += `"${p}","${r}","${l}"\n`;
+      });
+      csv += '\n"Segment","C dreapta (cm)","c dreapta (cm)","Volum segment dreapta (mL)","C stanga (cm)","c stanga (cm)","Volum segment stanga (mL)"\n';
+
+      let totalR = 0, totalL = 0;
+      SEGMENTS.forEach(([p1,p2]) => {
+        const Cr = num($('#r-' + p1).value);
+        const cr = num($('#r-' + p2).value);
+        const Cl = num($('#l-' + p1).value);
+        const cl = num($('#l-' + p2).value);
+        let Vr = 0, Vl = 0;
+        if (Number.isFinite(Cr) && Number.isFinite(cr)) { Vr = (h) * (Cr*Cr + Cr*cr + cr*cr) / (12 * Math.PI); totalR += Vr; }
+        if (Number.isFinite(Cl) && Number.isFinite(cl)) { Vl = (h) * (Cl*Cl + Cl*cl + cl*cl) / (12 * Math.PI); totalL += Vl; }
+        csv += `"${p1}-${p2}","${Number.isFinite(Cr)?Cr:''}","${Number.isFinite(cr)?cr:''}","${Vr.toFixed(1)}","${Number.isFinite(Cl)?Cl:''}","${Number.isFinite(cl)?cl:''}","${Vl.toFixed(1)}"\n`;
+      });
+      const diffAbs = Math.abs(totalR - totalL);
+      const base = Math.max(totalR, totalL, 0);
+      const diffPct = base > 0 ? (diffAbs / base * 100) : 0;
+      csv += `\n"Total dreapta (mL)","${totalR.toFixed(1)}"\n`;
+      csv += `"Total stanga (mL)","${totalL.toFixed(1)}"\n`;
+      csv += `"Diferenta absoluta (mL)","${diffAbs.toFixed(1)}"\n`;
+      csv += `"Diferenta relativa (%)","${diffPct.toFixed(1)}"\n`;
+
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = 'calculator_volum_brat_AF.csv';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    // Debounce input handling
+    function debounce(fn, ms) { let t; return (...args) => { clearTimeout(t); t = setTimeout(() => fn.apply(this, args), ms); }; }
+    const onChange = debounce(() => { compute(); saveLocal(); }, 120);
+
+    // Init
+    buildInputsTable();
+    buildSegmentsTable();
+
+    document.getElementById('h').addEventListener('input', onChange);
+    POINTS.forEach(p => {
+      document.getElementById('r-' + p).addEventListener('input', onChange);
+      document.getElementById('l-' + p).addEventListener('input', onChange);
+    });
+
+    document.getElementById('btn-save').addEventListener('click', () => saveLocal(true));
+    document.getElementById('btn-load').addEventListener('click', () => loadLocal());
+    document.getElementById('btn-reset').addEventListener('click', () => resetAll());
+    document.getElementById('btn-export').addEventListener('click', () => exportCSV());
+
+    // Load any saved data and compute once on start
+    loadLocal();
+    compute();
+  </script>
+</body>
+</html>
