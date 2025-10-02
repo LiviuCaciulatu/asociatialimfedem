@@ -18,15 +18,13 @@ export default function Dropdown({ pages, isOpen, onClose }: DropdownProps) {
         {pages.map((page) => (
           <li key={page.path} className={styles.linkItem}>
             {page.path === '/simulator' ? (
-              <a
-                href="/assets/html/simulator-limfedem-brat.html"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={page.path}
                 className={`${styles.link} ${pathname === page.path ? styles.linkActive : ''}`}
                 onClick={() => onClose && onClose()}
               >
                 {page.name}
-              </a>
+              </Link>
             ) : (
               <Link
                 href={page.path}
