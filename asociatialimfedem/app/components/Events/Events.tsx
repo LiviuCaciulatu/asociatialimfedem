@@ -25,7 +25,6 @@ const Events: React.FC = () => {
 
   return (
     <section className={styles.events}>
-      <h3 className={styles.title}>Evenimente</h3>
       <div className={styles.grid}>
         {items.map((it) => (
           <EventCard

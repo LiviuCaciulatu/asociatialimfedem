@@ -21,13 +21,13 @@
 }
 
 .embedWrap {
-  /* responsive aspect-ratio wrapper (16:9) */
   position: relative;
   width: 100%;
   max-width: 560px;
   margin: 0 auto 1rem auto;
-  padding-top: calc(9 / 16 * 100%);
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  min-height: 180px;
 }
 
 .embedWrap iframe {
@@ -44,7 +44,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem; /* reduce padding to avoid extra gaps */
+  padding: 1.5rem;
 }
 
 .fallback {
@@ -56,7 +56,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .inner {
     flex-direction: column;
     padding: 0 1rem;

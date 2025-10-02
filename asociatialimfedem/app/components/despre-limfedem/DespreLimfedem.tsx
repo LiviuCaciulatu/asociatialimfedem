@@ -148,7 +148,7 @@ const DespreLimfedem: React.FC = () => {
           </p>
           <h4 className={styles.tagline}>Terapia include:</h4>
           <p className={styles.paragraph}>
-            Drenaj limfatic manual (MLD): O tehnică de terapie manuală care
+            <span className={styles.highlight}>Drenaj limfatic manual (MLD):</span> O tehnică de terapie manuală care
             utilizează tracțiunea pielii pentru stimularea capilarelor
             limfatice, și manevre cu presiune moderată pentru stimularea
             stațiilor ganglionare funcționale. Terapia de compresie: Bandajarea
@@ -159,14 +159,14 @@ const DespreLimfedem: React.FC = () => {
             stres.
           </p>
           <p className={styles.paragraph}>
-            Exerciții și activități fizice: exerciții personalizate pentru a
+            <span className={styles.highlight}>Exerciții și activități fizice:</span> exerciții personalizate pentru a
             îmbunătăți circulația limfatică locală și pentru a menține
             mobilitatea. Activitatea fizică și sportul cresc debitul limfatic de
             10-30 de ori – ATENȚIE în urma efortului, zona afectată nu trebuie
             să se umfle mai tare.
           </p>
           <p className={styles.paragraph}>
-            Îngrijirea pielii: igiena adecvată a pielii și protecție pentru a
+            <span className={styles.highlight}>Îngrijirea pielii:</span> igiena adecvată a pielii și protecție pentru a
             preveni infecțiile și agravarea stadiului. Drenajul limfatic
             mecanic: terapie adjuvantă, întotdeauna trebuie aplicată după
             drenajul manual; niciodată utilizată ca unic mijloc terapeutic
