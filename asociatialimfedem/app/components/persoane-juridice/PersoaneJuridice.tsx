@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./PersoaneJuridice.module.scss";
-import Link from "next/link";
 
 const PersoaneJuridice: React.FC = () => {
   return (

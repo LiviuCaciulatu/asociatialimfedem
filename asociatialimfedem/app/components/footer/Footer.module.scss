@@ -58,7 +58,7 @@
   opacity: 0.9;
   margin-top: 0.75rem;
   text-align: center;
-  grid-column: 1 / -1; /* span full width */
+  grid-column: 1 / -1;
 }
 
 .title {
@@ -183,7 +183,7 @@
 
 @media (max-width: 480px) {
   .cleancode img {
-    max-width: 260px; /* cap on very small screens */
+    max-width: 260px;
   }
 }
 

@@ -1,5 +1,4 @@
 import styles from "./CeFacem.module.scss";
-import Link from "next/link";
 
 const CeFacem: React.FC = () => {
   return (

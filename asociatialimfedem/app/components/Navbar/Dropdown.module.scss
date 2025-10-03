@@ -11,7 +11,6 @@
   background: #fff;
   flex-direction: column;
   align-items: center;
-  // padding: 1rem 2rem;
   transform: translateY(-100%);
   transition: transform 0.3s ease;
   display: none;
@@ -69,7 +68,6 @@
   }
 }
 
-/* Hide dropdown entirely on larger screens */
 @media (min-width: 1121px) {
   .menu {
     display: none !important;

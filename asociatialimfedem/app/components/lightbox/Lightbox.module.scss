@@ -16,7 +16,7 @@
   justify-content: center;
   position: relative;
   width: 90vw;
-  height: 75vh; /* fixed visual frame height */
+  height: 75vh;
   max-width: 1100px;
   max-height: 900px;
   box-sizing: border-box;
@@ -67,7 +67,6 @@
   font-size: 5vh;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .container {
     width: 95vw;
@@ -89,7 +88,7 @@
     height: 65vh;
     padding: 8px;
   }
-  /* move arrows inside the frame and make them easier to tap */
+
   .prev { left: 8px; }
   .next { right: 8px; }
   .nav {

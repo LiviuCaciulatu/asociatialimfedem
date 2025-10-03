@@ -72,9 +72,27 @@ const DespreLimfedem: React.FC = () => {
           <ul className={styles.list}>
             <li className={styles.listItem}>
               <span className={styles.icon} aria-hidden>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#EE9C32" strokeWidth="2" />
-                  <path d="M12 8v4" stroke="#EE9C32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#EE9C32"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 8v4"
+                    stroke="#EE9C32"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                   <circle cx="12" cy="16.2" r="0.6" fill="#EE9C32" />
                 </svg>
               </span>
@@ -83,9 +101,27 @@ const DespreLimfedem: React.FC = () => {
             </li>
             <li className={styles.listItem}>
               <span className={styles.icon} aria-hidden>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#EE9C32" strokeWidth="2" />
-                  <path d="M12 8v4" stroke="#EE9C32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#EE9C32"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 8v4"
+                    stroke="#EE9C32"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                   <circle cx="12" cy="16.2" r="0.6" fill="#EE9C32" />
                 </svg>
               </span>
@@ -94,9 +130,27 @@ const DespreLimfedem: React.FC = () => {
             </li>
             <li className={styles.listItem}>
               <span className={styles.icon} aria-hidden>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#EE9C32" strokeWidth="2" />
-                  <path d="M12 8v4" stroke="#EE9C32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#EE9C32"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 8v4"
+                    stroke="#EE9C32"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                   <circle cx="12" cy="16.2" r="0.6" fill="#EE9C32" />
                 </svg>
               </span>
@@ -105,9 +159,27 @@ const DespreLimfedem: React.FC = () => {
             </li>
             <li className={styles.listItem}>
               <span className={styles.icon} aria-hidden>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#EE9C32" strokeWidth="2" />
-                  <path d="M12 8v4" stroke="#EE9C32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#EE9C32"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 8v4"
+                    stroke="#EE9C32"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                   <circle cx="12" cy="16.2" r="0.6" fill="#EE9C32" />
                 </svg>
               </span>
@@ -116,9 +188,27 @@ const DespreLimfedem: React.FC = () => {
             </li>
             <li className={styles.listItem}>
               <span className={styles.icon} aria-hidden>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" stroke="#EE9C32" strokeWidth="2" />
-                  <path d="M12 8v4" stroke="#EE9C32" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#EE9C32"
+                    strokeWidth="2"
+                  />
+                  <path
+                    d="M12 8v4"
+                    stroke="#EE9C32"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                   <circle cx="12" cy="16.2" r="0.6" fill="#EE9C32" />
                 </svg>
               </span>
@@ -148,28 +238,33 @@ const DespreLimfedem: React.FC = () => {
           </p>
           <h4 className={styles.tagline}>Terapia include:</h4>
           <p className={styles.paragraph}>
-            <span className={styles.highlight}>Drenaj limfatic manual (MLD):</span> O tehnică de terapie manuală care
-            utilizează tracțiunea pielii pentru stimularea capilarelor
-            limfatice, și manevre cu presiune moderată pentru stimularea
-            stațiilor ganglionare funcționale. Terapia de compresie: Bandajarea
-            compresivă multistratificată ajută la evacuarea unei cantități mai
-            mari de limfă din zona afectată de limfedem. Îmbrăcămintea de
-            compresie păstrează rezultatele obținute și previn agravrea
-            limfedemului în timpul activităților cotidiene sau în situații de
-            stres.
+            <span className={styles.highlight}>
+              Drenaj limfatic manual (MLD):
+            </span>{" "}
+            O tehnică de terapie manuală care utilizează tracțiunea pielii
+            pentru stimularea capilarelor limfatice, și manevre cu presiune
+            moderată pentru stimularea stațiilor ganglionare funcționale.
+            Terapia de compresie: Bandajarea compresivă multistratificată ajută
+            la evacuarea unei cantități mai mari de limfă din zona afectată de
+            limfedem. Îmbrăcămintea de compresie păstrează rezultatele obținute
+            și previn agravrea limfedemului în timpul activităților cotidiene
+            sau în situații de stres.
           </p>
           <p className={styles.paragraph}>
-            <span className={styles.highlight}>Exerciții și activități fizice:</span> exerciții personalizate pentru a
-            îmbunătăți circulația limfatică locală și pentru a menține
-            mobilitatea. Activitatea fizică și sportul cresc debitul limfatic de
-            10-30 de ori – ATENȚIE în urma efortului, zona afectată nu trebuie
-            să se umfle mai tare.
+            <span className={styles.highlight}>
+              Exerciții și activități fizice:
+            </span>{" "}
+            exerciții personalizate pentru a îmbunătăți circulația limfatică
+            locală și pentru a menține mobilitatea. Activitatea fizică și
+            sportul cresc debitul limfatic de 10-30 de ori – ATENȚIE în urma
+            efortului, zona afectată nu trebuie să se umfle mai tare.
           </p>
           <p className={styles.paragraph}>
-            <span className={styles.highlight}>Îngrijirea pielii:</span> igiena adecvată a pielii și protecție pentru a
-            preveni infecțiile și agravarea stadiului. Drenajul limfatic
-            mecanic: terapie adjuvantă, întotdeauna trebuie aplicată după
-            drenajul manual; niciodată utilizată ca unic mijloc terapeutic
+            <span className={styles.highlight}>Îngrijirea pielii:</span> igiena
+            adecvată a pielii și protecție pentru a preveni infecțiile și
+            agravarea stadiului. Drenajul limfatic mecanic: terapie adjuvantă,
+            întotdeauna trebuie aplicată după drenajul manual; niciodată
+            utilizată ca unic mijloc terapeutic
           </p>
           <p className={styles.paragraph}>
             În unele cazuri, intervenția chirurgicală poate fi luată în

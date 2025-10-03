@@ -34,7 +34,6 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, des
         )}
         {description && (
           (() => {
-            // If description is an array, pick the first non-empty paragraph for the card teaser
             if (Array.isArray(description)) {
               const first = description.find((d) => d && d.trim() !== "") || "";
               return (
@@ -45,7 +44,6 @@ const EventCard: React.FC<EventCardProps> = ({ title, date, location, image, des
               );
             }
 
-            // If it's a string, render a truncated plain-text teaser to avoid layout issues
             const asString = description as string;
             const plain = asString.replace(/<[^>]+>/g, "");
             const teaser = plain.length > 140 ? plain.slice(0, 137) + "..." : plain;
