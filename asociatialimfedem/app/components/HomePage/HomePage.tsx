@@ -15,7 +15,6 @@ export default function HomePage() {
       <HeroSection />
       <Mission />
       <JoinUs />
-      <EchipaMain />
       <Gallery />
       <Newsletter />
       <Events />

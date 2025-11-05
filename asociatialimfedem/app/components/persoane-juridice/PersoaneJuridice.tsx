@@ -15,7 +15,7 @@ const PersoaneJuridice: React.FC = () => {
         <br />
         Poți redirecționa către{" "}
         <span className={styles.highlight}>
-          ASOCIATIA PACIENTILOR CU LIMFEDEM
+          ASOCIAȚIA LIMFEDEM
         </span>{" "}
         gratuit și deductibil o cota din din impozitul pe profit al firmei tale.
         <br />
@@ -60,7 +60,7 @@ const PersoaneJuridice: React.FC = () => {
             >
               contact@asociatialimfedem.ro
             </a>{" "}
-            sau la sediul nostru din str. Râmnicu Vâlcea nr 8 etaj 7 ap 711,
+            sau la sediul nostru din str. Râmnicu Vâlcea nr 8 etaj 7 ap 709,
             sector 3, București.
             <br />
             <br />
@@ -96,8 +96,7 @@ const PersoaneJuridice: React.FC = () => {
             anului 2023 nu a depășit limita maximă permisă, aveți posibilitatea
             să alegeți să redirecționați si in anul 2024 o parte din impozitul
             pe profit sau impozitul pe veniturile microîntreprinderilor către o
-            entitate caritabilă sau culturală cum este si ASOCIATIA PACIENTILOR
-            CU LIMFEDEM, in termen de 6 luni de la termenul legal de depunere a
+            entitate caritabilă sau culturală cum este si ASOCIATIA LIMFEDEM, in termen de 6 luni de la termenul legal de depunere a
             declaratiei anuale de impozit pe profit.
             <br />
             <br />• Pentru a iniția acest proces, descarca si completeaza
@@ -109,7 +108,7 @@ const PersoaneJuridice: React.FC = () => {
             >
               contact@asociatialimfedem.ro
             </a>{" "}
-            sau la sediul nostru din str. Ramnicu Valcea nr 8 etaj 7 ap 711,
+            sau la sediul nostru din str. Ramnicu Valcea nr 8 etaj 7 ap 709,
             sector 3, București.
             <br />
             <br />
@@ -139,7 +138,7 @@ const PersoaneJuridice: React.FC = () => {
             <br />
             • Ultimul pas constă în depunerea Declarației 177, care trebuie să
             includă toate informațiile necesare, inclusiv suma pe care doriți să
-            o redirecționați către ASOCIATIA PACIENTILOR CU LIMFEDEM.
+            o redirecționați către ASOCIAȚIA LIMFEDEM.
             <br />
             <br />
             Mai multe detalii se pot gasi si aici despre cadrul legal si

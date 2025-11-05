@@ -28,7 +28,7 @@ const EchipaMain: React.FC = () => {
           <div className={styles.title}>Echipa</div>
           <div className={styles.content}>
             <p>
-              Fondatorii Asociației sunt Claudia Trandafirescu, pacient cu limfedem secundar grad III și Liculescu Florentina, pacient oncologic și pacient cu limfedem secundar.
+              Fondatoarea Asociației este Claudia Trandafirescu, pacient cu limfedem secundar grad III.
             </p>
           </div>
           <Link href="/echipa-noastra" className={styles.buttonDark}>

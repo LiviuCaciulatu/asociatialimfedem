@@ -6,7 +6,7 @@ export default function Welcome() {
     <section className={styles.welcome} aria-labelledby="welcome-title">
       <div className={styles.inner}>
         <h2 id="welcome-title" className={styles.title}>
-          Bun venit la asociația pacienților cu{" "}
+          Bun venit la asociația {" "}
           <span className={styles.highlight}>limfedem</span>
         </h2>
         <p className={styles.description}>

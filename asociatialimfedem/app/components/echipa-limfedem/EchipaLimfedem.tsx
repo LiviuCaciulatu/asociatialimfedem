@@ -33,7 +33,7 @@ const EchipaLimfedem: React.FC = () => {
               <div className={styles.despreNoi}>
               <h3 className={styles.sectionTitle}>Despre noi</h3>
               <p className={styles.sectionText}>
-                Asociația Pacientilor cu Limfedem este un angajament pentru îmbunătățirea vieții pacienților cu afecțiuni ale sistemului limfatic.
+                Asociația Limfedem este un angajament pentru îmbunătățirea vieții pacienților cu afecțiuni ale sistemului limfatic.
                 <br /><br />
                 Într-o lume în care aceste boli sunt adesea nevăzute, suntem aici pentru a aduce lumină și speranță, promovând o schimbare pozitivă în societate și în viețile celor afectați.
               </p>
@@ -41,9 +41,9 @@ const EchipaLimfedem: React.FC = () => {
             </div>
 
             <div className={styles.leadership}>
-              <h3 className={styles.sectionTitle}>Echipa de conducere</h3>
+              {/* <h3 className={styles.sectionTitle}>Echipa de conducere</h3> */}
               <div className={styles.gridLeadership}>
-                {employees.slice(0, 2).map((emp, idx) => (
+                {employees.slice(0, 1).map((emp, idx) => (
                   <div key={idx} className={styles.leaderWrapper}>
                     <EmployeeCard name={emp.name} position={emp.position} image={emp.image} />
                   </div>

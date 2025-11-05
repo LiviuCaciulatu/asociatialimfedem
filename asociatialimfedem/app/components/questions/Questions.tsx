@@ -31,15 +31,15 @@ const defaultItems: QA[] = [
         mână, iată datele mai jos: <br />
         <br />
         <span className={styles.highlight}>
-          ASOCIATIA PACIENTILOR CU LIMFEDEM
+          ASOCIAȚIA LIMFEDEM
         </span>{" "}
         <br />
         <br />
         Cod de identificare fiscală:{" "}
-        <span className={styles.highlight}>47632542</span> <br />
+        <span className={styles.highlight}>52178265</span> <br />
         <br />
         IBAN:{" "}
-        <span className={styles.highlight}>RO80 ING 0000 9999 1353 0971</span>
+        <span className={styles.highlight}>RO42 INGB 0000 9999 1801 0242</span>
       </span>
     ),
   },
@@ -78,7 +78,7 @@ const defaultItems: QA[] = [
     answer: (
       <span>
         Din 2021 toate organizațiile nonprofit pot primi până la 3,5% din
-        impozitul pe venit.Inregistrarea ASOCIATIE PACIENTILOR CU LIMFEDEM poate
+        impozitul pe venit.Inregistrarea ASOCIAȚIA LIMFEDEM poate
         fi verificată accesând acest LINK.{" "}
         <a
           href="https://www.anaf.ro/RegistrulEntitatilorUnitatilorCult/"
@@ -88,7 +88,7 @@ const defaultItems: QA[] = [
         >
           https://www.anaf.ro/RegistrulEntitatilorUnitatilorCult/
         </a>
-        &nbsp; introducând codul fiscal <span className={styles.highlight}>47632542</span>.
+        &nbsp; introducând codul fiscal <span className={styles.highlight}>52178265</span>.
       </span>
     ),
   },
@@ -97,7 +97,7 @@ const defaultItems: QA[] = [
     question: "Pot face aceste demersuri online?",
     answer:(
       <span>Da, poti completa, semna online si trimite formularul pe <a
-          href="https://redirectioneaza.ro/asociatia-pacientilor-cu-limfedem/"
+          href="https://asociatialimfedem.ro/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
@@ -152,7 +152,7 @@ const Questions: React.FC<QuestionsProps> = ({ items = defaultItems }) => {
       <div className={styles.actions}>
         <a
           className={styles.primary}
-          href="https://redirectioneaza.ro/asociatia-pacientilor-cu-limfedem/"
+          href="https://asociatialimfedem.ro/"
           target="_blank"
           rel="noopener noreferrer"
         >

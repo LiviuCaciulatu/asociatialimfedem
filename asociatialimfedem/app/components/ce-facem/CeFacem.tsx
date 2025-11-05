@@ -5,14 +5,14 @@ const CeFacem: React.FC = () => {
     <div className={styles.ceFacem}>
       <div className={styles.description}>
         <p>
-          Asociația Pacienților cu Limfedem reprezintă o comunitate dedicată,
+          Asociația Limfedem reprezintă o comunitate dedicată,
           alcătuită din voluntari dedicați, care își unesc forțele pentru a face
           o schimbare pozitivă în viața pacienților cu limfedem și a aduce
           speranță și încurajare în mijlocul dificultăților, ca să ne ridicăm și
           să ne susținem.
           <br />
           <br />
-          Fondată în aprilie 2023, Asociația Pacientilor cu Limfedem este o
+          Fondată în aprilie 2023, Asociația Limfedem este o
           organizatie non-profit, un refugiu și un far de lumină pentru
           pacienții care luptă împotriva diverselor afecțiuni ale sistemului
           limfatic, limfedem primar, limfedem secundar, lipedem și alte boli
