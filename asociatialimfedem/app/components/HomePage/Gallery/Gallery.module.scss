@@ -37,7 +37,7 @@
 .grid {
   width: $maxWidth;
   display: grid;
-  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr;
   gap: 1rem;
   justify-items: center;
 }
@@ -47,7 +47,7 @@
   background: #fff;
   display: block;
   position: relative;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   transition: transform 0.28s ease, box-shadow 0.28s ease;
   will-change: transform;
   aspect-ratio: 1 / 1;

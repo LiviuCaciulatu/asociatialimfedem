@@ -29,7 +29,7 @@ const EchipaLimfedem: React.FC = () => {
         ) : (
           <>
             <div className={styles.aboutUs}>
-              <img src="/assets/echipa/about-us.png" alt="Limfedem Logo" className={styles.aboutUsImg} />
+              {/* <img src="/assets/echipa/about-us-1.jpg" alt="Limfedem Logo" className={styles.aboutUsImg} /> */}
               <div className={styles.despreNoi}>
               <h3 className={styles.sectionTitle}>Despre noi</h3>
               <p className={styles.sectionText}>

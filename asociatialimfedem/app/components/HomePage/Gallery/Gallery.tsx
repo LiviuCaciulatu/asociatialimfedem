@@ -13,7 +13,7 @@ const Gallery: React.FC = () => {
 
   useEffect(() => {
 
-  const galleryFiles = ['g1.jpg', 'g2.jpg', 'g3.jpg', 'g4.jpg', 'g5.jpeg', 'g6.jpeg'];
+  const galleryFiles = ['g1.jpg', 'g2.jpg', 'g3.jpg', 'g4.jpg', 'g5.jpg', 'g6.jpeg'];
   const imgs = galleryFiles.map((f) => ({ image: `/assets/gallery/${f}`, alt: f }));
   setItems(imgs);
   }, []);

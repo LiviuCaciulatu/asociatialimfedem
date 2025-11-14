@@ -34,10 +34,10 @@
 }
 
 .aboutUsImg{
-  max-width: 40rem;
-  height: auto;
+  max-width: 30rem;
+  height: 30rem;
   margin-right: 1.5rem;
-  border-radius: 8px;
+  border-radius: 32px;
   object-fit: cover;
 }
 
@@ -60,6 +60,7 @@
   color: #444;
   line-height: 1.6;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .leadership, .volunteers {

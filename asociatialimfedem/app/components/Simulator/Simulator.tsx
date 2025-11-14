@@ -361,6 +361,10 @@ const Simulator: React.FC = () => {
                 </tbody>
               </table>
             </div>
+            <img
+              src="/assets/jpg/simulator-mana.jpeg"
+              alt="Mână arătând cum se măsoară brațul (ghid)"
+            />
           </div>
         </section>
 
