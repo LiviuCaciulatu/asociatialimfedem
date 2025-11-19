@@ -53,16 +53,15 @@
 }
 
 .right {
-  flex: 0 0 60%;
+  flex: 0 0 50%;
   display: flex;
   justify-content: center;
 }
 
 .image {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 0.5rem;
-  scale: 1.3;
 }
 
 

@@ -7,8 +7,8 @@ export default function Page() {
   return (
     <>
       <Hero
-        title="Redirecționare impozit"
-        description="Informații despre redirecționarea a 3.5% din impozitul pe venit către Asociație"
+        title="Persoane juridice"
+        description="Alege să conteze unde ajung banii companiei tale"
         backgroundImage="/assets/jpg/background-1.jpg"
       />
       <PersoaneJuridice />

@@ -5,29 +5,78 @@ const PersoaneJuridice: React.FC = () => {
   return (
     <section className={styles.wrapper} aria-labelledby="pj-title">
       <div className={styles.description}>
-        Din pozitia de antreprenor sau manager al unei companii, poti face o
-        fapta buna.
-        <br />
-        <br />
-        <span className={styles.highlight}>
-          CREDEM CU TARIE CA NICI O FAPTA BUNA NU RAMANE NERESPLATITA
-        </span>
-        <br />
-        Poți redirecționa către{" "}
-        <span className={styles.highlight}>
-          ASOCIAȚIA LIMFEDEM
-        </span>{" "}
-        gratuit și deductibil o cota din din impozitul pe profit al firmei tale.
-        <br />
-        <br />
-        <span className={styles.highlight}>
-          Nu te costă nimic, deoarece această sumă se scade din impozitul
-          datorat statului.
-        </span>
-        <br />
-        <br />
-        Practic, poți alege unde ajung banii tăi și poți susține astfel
-        activitatea pe care o desfășurăm pentru pacientii cu limfedem.
+        <p className={styles.paragraph}>
+          Din poziția de antreprenor sau manager, poți transforma impozitul
+          într-o investiție în vieți reale.{" "}
+          <span className={styles.highlight}>
+            Redirecționezi legal și gratuit
+          </span>{" "}
+          o parte din impozitul datorat statului către{" "}
+          <span className={styles.highlight}>
+            Asociația Limfedem – Împreună pas cu pas
+          </span>{" "}
+          și pui în mișcare îngrijiri corecte pentru pacienți.
+        </p>
+        <p className={styles.subtitle}>
+          Nicio faptă bună nu rămâne nerăsplătită.
+        </p>
+        <p className={styles.paragraph}>
+          Tu câștigi reputație, sens și impact măsurabil; pacienții câștigă
+          demnitate, acces la sprijin și șansa unui parcurs mai ușor.
+        </p>
+        <p className={styles.subtitle}>De ce să devii partener în 2025</p>
+        <ul>
+          <li>
+            Impact direct & tangibil: ghiduri pentru pacienți, grupuri de
+            suport, materiale esențiale, acces la compresie pentru copii și
+            adulți.
+          </li>
+          <li>
+            Transparență totală: raport de impact, indicatori clari (număr
+            pacienți sprijiniți, sesiuni, materiale distribuite).
+          </li>
+          <li>
+            Zero cost suplimentar: suma se scade din impozitul datorat, conform
+            Codului Fiscal.
+          </li>
+        </ul>
+        <p className={styles.subtitle}>Cum poți sprijini</p>
+        <ol>
+          <li>
+            Sponsorizare deductibilă (conform Codului Fiscal) – Noi îți furnizăm
+            contractul de sponsorizare sau îl folosim pe cel al companiei tale
+            dacă folosești unul.
+          </li>
+          <li>
+            Sponsorizare pro bono – Spații pentru evenimente, produse utile
+            pacienților, servicii (juridic, comunicare, logistică).
+          </li>
+        </ol>
+      </div>
+      <p className={styles.subtitle}>Ce primești</p>
+      <ul>
+        <li>Raport de impact trimestrial/anual + studii de caz.</li>
+        <li>
+          Vizibilitate în campanii, evenimente și materiale (după preferință).
+        </li>
+        <li>Pachet de comunicare pentru canalele tale (interna & social).</li>
+        <li>Certificat de sponsorizare pentru evidență și audit.</li>
+      </ul>
+
+      <p className={styles.subtitle}>Hai să acționăm împreună pas cu pas</p>
+      <ul>
+        <li>
+          Acordă-ne un call de 20 min – îți prezentăm cazurile și obiectivele pe
+          care le avem pe scurt.
+        </li>
+      </ul>
+
+      <div className={styles.content}>
+        Asociația Limfedem – Împreună pas cu pas <br />
+        CUI: 52178265 <br />
+        IBAN (RON):{" "}
+        <span className={styles.highlight}>RO42INGB0000999918010242</span> – ING
+        Bank
       </div>
 
       <div className={styles.howTo}>
@@ -96,8 +145,9 @@ const PersoaneJuridice: React.FC = () => {
             anului 2023 nu a depășit limita maximă permisă, aveți posibilitatea
             să alegeți să redirecționați si in anul 2024 o parte din impozitul
             pe profit sau impozitul pe veniturile microîntreprinderilor către o
-            entitate caritabilă sau culturală cum este si ASOCIATIA LIMFEDEM, in termen de 6 luni de la termenul legal de depunere a
-            declaratiei anuale de impozit pe profit.
+            entitate caritabilă sau culturală cum este si ASOCIATIA LIMFEDEM, in
+            termen de 6 luni de la termenul legal de depunere a declaratiei
+            anuale de impozit pe profit.
             <br />
             <br />• Pentru a iniția acest proces, descarca si completeaza
             Contractul de sponsorizare cu datele firmei tale. Trimite contractul

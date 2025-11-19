@@ -15,31 +15,27 @@ type QuestionsProps = {
 const defaultItems: QA[] = [
   {
     question: "Când se trimite formularul?",
-    answer: "In perioada 1 ian 2024 până pe 25 mai​ 2024.",
+    answer: "In perioada 1 ian 2026 până pe 25 mai 2026.",
   },
   {
     question: "L-am descărcat, ce trebuie să completez?",
     answer: (
       <span>
-        E nevoie să completezi de mână, cu majuscule, secțiunea I care conține
-        datele tale de identificare și să semnezi la Semnătura contribuabilului.
-        Atat!
+        E nevoie să completezi aici secțiunea I care conține datele tale de
+        identificare ( Nume , Prenume, CNP, tel , adresa de email, etc ) și să
+        semnezi la Semnătura contribuabilului. Atat!
         <br />
         <br />
         Vei vedea că sunt deja completate anul și datele Organizației Salvați
         Copiii. Dacă ai deja un formular printat și vrei să le completezi de
         mână, iată datele mai jos: <br />
         <br />
-        <span className={styles.highlight}>
-          ASOCIAȚIA LIMFEDEM
-        </span>{" "}
-        <br />
+        <span className={styles.highlight}>ASOCIAȚIA LIMFEDEM</span> <br />
         <br />
         Cod de identificare fiscală:{" "}
         <span className={styles.highlight}>52178265</span> <br />
         <br />
-        IBAN:{" "}
-        <span className={styles.highlight}>RO42 INGB 0000 9999 1801 0242</span>
+        IBAN: <span className={styles.highlight}>RO42INGB0000999918010242</span>
       </span>
     ),
   },
@@ -70,16 +66,14 @@ const defaultItems: QA[] = [
   {
     question: "Aceasta este o donație?​",
     answer:
-      "Nu. Este alegerea ta despre cum să fie folosiți o parte din banii pe care i-ai virat deja statului, ca impozit pe veniturile obținute în 2023. În cazul în care nu alegi să susții o cauză anume, întreaga sumă va rămâne la bugetul de stat.",
+      "Nu. Este alegerea ta despre cum să fie folosiți o parte din banii pe care i-ai virat deja statului, ca impozit pe veniturile obținute în 2025. În cazul în care nu alegi să susții o cauză anume, întreaga sumă va rămâne la bugetul de stat.",
   },
 
   {
     question: "De ce 3,5%?",
     answer: (
       <span>
-        Din 2021 toate organizațiile nonprofit pot primi până la 3,5% din
-        impozitul pe venit.Inregistrarea ASOCIAȚIA LIMFEDEM poate
-        fi verificată accesând acest LINK.{" "}
+        Din 2021 toate organizațiile nonprofit pot primi până la 3,5% din impozitul pe venit.Inregistrarea ASOCIATIA LIMFEDEM – IMPREUNA PAS CU PAS poate fi verificată accesând acest LINK .{" "}
         <a
           href="https://www.anaf.ro/RegistrulEntitatilorUnitatilorCult/"
           target="_blank"
@@ -88,23 +82,44 @@ const defaultItems: QA[] = [
         >
           https://www.anaf.ro/RegistrulEntitatilorUnitatilorCult/
         </a>
-        &nbsp; introducând codul fiscal <span className={styles.highlight}>52178265</span>.
+        &nbsp; introducând codul fiscal{" "}
+        <span className={styles.highlight}>52178265</span>.
       </span>
     ),
   },
 
   {
     question: "Pot face aceste demersuri online?",
-    answer:(
-      <span>Da, poti completa, semna online si trimite formularul pe <a
+    answer: (
+      <span>
+        Da, poti completa, semna online si trimite formularu AICI {" "}
+        <a
           href="https://asociatialimfedem.ro/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
         >
           redirectioneaza.ro
-        </a>,</span>
-    )
+        </a>
+        ,
+      </span>
+    ),
+  },
+    {
+    question: "Pot trimite formularul și pe e-mail?",
+    answer: (
+      <span>
+       Da. Îl poți trimite la <span className={styles.highlight}>contact@asociatialimfedem.ro</span>, iar <span className={styles.highlight}>noi îl depunem</span> la ANAF pentru tine.
+      </span>
+    ),
+  },
+      {
+    question: "Mă poate contacta ANAF după ce depun Formularul 230?",
+    answer: (
+      <span>
+       Da. E o <span className={styles.highlight}>verificare standard</span>: ți se poate cere să confirmi că ai completat formularul <span className={styles.highlight}>în cunoștință de cauză</span> și că <span className={styles.highlight}>tu</span> ai ales direcționarea. Spui simplu: „Da, eu am optat”. Atât. Nu ți se cere nicio altă informație sensibilă.
+      </span>
+    ),
   },
 ];
 

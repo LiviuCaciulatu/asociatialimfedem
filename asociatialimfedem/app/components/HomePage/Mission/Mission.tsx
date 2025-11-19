@@ -1,31 +1,26 @@
 "use client";
-import React from 'react';
-import styles from './Mission.module.scss';
-import Link from 'next/link';
+import React from "react";
+import styles from "./Mission.module.scss";
+import Link from "next/link";
 
 export default function Mission() {
   return (
     <section className={styles.mission}>
       <div className={styles.left}>
         <h2 className={styles.title}>
-          Misiunea asociației {' '}
-          <span className={styles.highlight}>Limfedem</span>
+          Misiunea asociației <span className={styles.highlight}>Limfedem</span>
         </h2>
         <div className={styles.content}>
           <p>
-            Ne dorim să fim o voce puternică în comunitatea pacienților cu limfedem, dar și în comunitatea medicală
-            pentru a crește gradul de conștientizare și înțelegere a acestei afecțiuni atât de puțin cunoscută și
-            recunoscută de sistem.
-          </p>
-          <p>
-            Prin colaborarea cu medici, fizioterapeuți, furnizori de articole medicale și alți specialiști, ne dorim
-            să fim alături de pacienți în călătoria lor pentru conștientizarea, educația, gestionarea și îngrijirea
-            limfedemului primar și secundar, dar și a afecțiunilor conexe limfedemului, precum lipedemul.
-          </p>
-          <p>
-            Nu în cele din urmă dorim susținerea drepturilor pacienților care suferă de această boală cronică.
-            Ne dorim să fim activi pentru a oferi sprijin emoțional, medical și juridic, informații utile și resurse
-            necesare pentru gestionarea bolii.
+            Misiunea Asociației Limfedem – Impreuna pas cu pas,este să de a voce
+            pacienților și să impună respectarea drepturilor lor. Creștem
+            nivelul de conștientizare în rândul publicului și al
+            profesioniștilor, conectăm pacienții la îngrijiri corecte și
+            susținem, fără compromisuri, standarde internationale de tratament
+            pentru limfedem (primar și secundar), afecțiunile conexe, inclusiv
+            lipedemul. Ne străduim să transformăm suferința tăcută în
+            recunoaștere oficială, traseele confuze în parcursuri clare de
+            îngrijire și izolarea în comunitate activă.
           </p>
         </div>
         <Link href="/implica-te">
@@ -33,11 +28,11 @@ export default function Mission() {
         </Link>
       </div>
       <div className={styles.right}>
-            <img
-              src="/assets/png/photo-1.png"
-              alt="logo"
-              className={styles.logoAnpc}
-            />
+        <img
+          src="/assets/png/photo-1.png"
+          alt="logo"
+          className={styles.logoAnpc}
+        />
       </div>
     </section>
   );
