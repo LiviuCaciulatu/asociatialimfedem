@@ -1,65 +1,110 @@
 [
   {
-    "title": "Eveniment Craciun",
-    "id": "craciun",
+    "title": "Eveniment Caiac",
+    "id": "caiac",
     "description": [
-      "🎄 Am încheiat și ultimul eveniment din acest an, și anume Atelierul nostru de Crăciun. Suntem recunoscătoare pentru că ați fost alături de noi pe parcursul întregului an, participând la evenimentele de informare organizate de Asociația Pacienților cu Limfedem și la orele noastre de gimnastică medicală.",
-      "🎄 Evenimentul nostru de Crăciun a fost o ocazie specială în care am avut șansa să ne bucurăm împreună, să creăm lucruri minunate și să ne simțim conectate într-un mod aparte. Participantele noastre, cu răbdare și dedicare, au creat nu doar obiecte minunate, ci și momente de prietenie și bucurie autentică.",
-      "🎄 Colindele voastre au fost o mare surpriză, ne-au încălzit inimile, iar atmosfera a fost plină de voie bună și emoție. Împreună, am reușit să aducem în centrul atenției valori precum prietenia, curajul și empatia",
-      "🎄 Vă mulțumim din inimă pentru participarea voastră activă și pentru entuziasmul pe care l-ați adus la fiecare eveniment. Apreciem fiecare moment petrecut împreună și suntem nerăbdătoare să continuăm această călătorie împreună în anul care urmează.",
-      "🎄 Cu toată căldura și recunoștința noastră, vă dorim sărbători frumoase alături de cei dragi. Ne revedem cu bucurie și entuziasm la evenimentele următoare din anul 2024."
+      "<span style=\"font-weight: bold;\">Apus, apă liniștită și zâmbete.</span> Așa a fost seara noastră pe lacul Herăstrău, unde ne-am bucurat de mișcare blândă în caiac, de liniștea apei și de puterea comunității. Fiecare a vâslit în ritmul lui—fără competiție, fără presiune—doar grijă de sine și respirație liniștită.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">Mulțumim, Adventure Time!</h2>",
+      "Le suntem recunoscători prietenilor noștri de la <span style=\"font-weight: bold;\">Adventure Time</span> pentru ghidajul atent, briefingul de siguranță și felul în care au făcut loc pentru fiecare emoție și întrebare. Mulțumim și <span style=\"font-weight: bold;\">fizioterapeutului Cristina Gogoreanu</span> pentru grija și sfaturile oferite.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\"> De ce mișcare blândă în limfedem: </h2>",
+      "• Sprijină <span style=\"font-weight: bold;\">circulația limfatică</span> și poate ușura senzația de greutate în membre.",
+      "• Relaxează musculatura și mintea, aducând stare de bine.",
+      "• Încurajează conectarea cu propriul corp și cu respirația.",
+      "• Se adaptează ușor: pauze dese, ritm propriu, compresie purtată conform recomandării terapeutului.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">Vrei să vii data viitoare?</h2>",
+      "Ne-ar bucura să fii alături de noi la următoarele întâlniri cu mișcare blândă, siguranță și multă empatie. Pentru întrebări sau propuneri: <a href=\"mailto:asociatialimfedem@gmail.com\" style=\"font-weight: bold;\">asociatialimfedem@gmail.com</a>.",
+      "<span style=\"font-weight: bold;\">Mulțumim tuturor participantelor</span> pentru încredere și curajul blând de a fi prezente. Împreună e mai ușor—pas cu pas. 💙"
     ],
-    "image": "/assets/events/craciun/craciun-1.jpg",
+    "image": "/assets/events/caiac/1.jpg",
     "images": [
-      "/assets/events/craciun/craciun-1.jpg",
-      "/assets/events/craciun/craciun-2.jpg"
+      "/assets/events/caiac/1.jpg",
+      "/assets/events/caiac/2.jpg",
+      "/assets/events/caiac/3.jpg",
+      "/assets/events/caiac/4.jpg",
+      "/assets/events/caiac/5.jpg",
+      "/assets/events/caiac/6.jpg",
+      "/assets/events/caiac/7.jpg",
+      "/assets/events/caiac/8.jpg",
+      "/assets/events/caiac/9.jpg",
+      "/assets/events/caiac/10.jpg",
+      "/assets/events/caiac/11.jpg"
     ]
   },
   {
-    "title": "Eveniment educare pacienti decembrie",
-    "id": "decembrie",
+    "title": "Eveniment informare Novak",
+    "id": "novak",
     "description": [
-      "🟢 La evenimentul nostru special din data de 15 decembrie, am discutat despre sistemul limfatic, limfedem, gestionarea acestuia și rolul crucial pe care îl joacă îmbrăcămintea de compresie și gimnastica medicală în această luptă.",
-      "🟢 <a style=\"color:#EE9C32\" href=\"https://www.facebook.com/CristinaGogoreanuFizioterapeut\" target=\"_blank\" rel=\"noopener noreferrer\">Cristina Gogoreanu Fizioterapeut</a> ne-a invătat despre funcționarea sistemului limfatic, despre cum să folosim corect îmbrăcămintea de compresie, cum să o alegem în funcție de nevoile individuale și cum să o integrăm în rutina noastră zilnică pentru a gestiona eficient limfedemul.",
-      "🟢 Mulțumim <a style=\"color:#EE9C32\" href=\"https://www.facebook.com/NovakHealthcare\" target=\"_blank\" rel=\"noopener noreferrer\">Novak Healthcare Concept</a>, pentru ajutorul și implicarea în evenimentul nostru. Pentru o asociație mică și curajoasă, este extrem de importantă susținerea necondiționată, pe termen lung a activității noastre.",
-      "🟢 Mulțumim <a style=\"color:#EE9C32\" href=\"https://www.facebook.com/CristinaGogoreanuFizioterapeut\" target=\"_blank\" rel=\"noopener noreferrer\">Cristina Gogoreanu Fizioterapeut</a> pentru ajutorul tău în desfășurarea acestui eveniment. Eforturile tale și energia ta au fost esențiale pentru reușita acestei întâlniri educative și inspiraționale.",
-      "🟢 Suntem recunoscătoare pacientelor noastre pentru participare, zâmbete, exemplul vostru de implicare activă și dorința de înțelegere a limfedemului și gestionarea acestuia. Mulțumim și pentru donațiile făcute. Bănuții vor merge pentru ajutorarea copiilor cu limfedem primar.",
-      "🟢Împreună, devenim o comunitate puternică și dedicată să aducem mai multă înțelegere și sprijin celor afectați de limfedem. #limfedemsecundar #limfedemprimar #lipedem #gestionamlimfedemul #asociatiapacientilorculimfedem"
+      "<p>În fiecare lună, <span style=\"font-weight: bold;\">Asociația Limfedem – Împreună Pas cu Pas</span> organizează la <span style=\"font-weight: bold;\">Magazinul Novak</span> întâlniri fizice de <span style=\"font-weight: bold;\">informare și susținere</span> pentru persoanele care trăiesc cu limfedem — primar sau secundar. Ne dorim să transformăm informația în sprijin real, pe înțelesul tuturor, într-un cadru cald și prietenos.</p>",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">Ce găsești la aceste întâlniri</h2>",
+      "<span style=\"font-weight: bold;\">• Informații sigure și actuale</span> despre compresie (mănuși, ciorapi, mâneci), îngrijirea pielii și rutine zilnice ușoare.",
+      "<span style=\"font-weight: bold;\">• Demonstrații practice</span>: diferențe între compresia de zi și de noapte, cum alegi mărimea și cum verifici potrivirea.",
+      "<span style=\"font-weight: bold;\">• Profesioniști alături de noi</span>: fizioterapeuți, consilieri în compresie și invitați din domenii conexe, gata să răspundă pe loc la întrebări.",
+      "<span style=\"font-weight: bold;\">• Susținere emoțională și comunitate</span>: întâlnești oameni ca tine, împărtășești preocupări și pleci cu mai multă claritate și încredere.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">Pentru cine sunt</h2>",
+      "• Pacienți cu <span style=\"font-weight: bold;\">limfedem primar</span> sau <span style=\"font-weight: bold;\">secundar, lipedem sau persoane care au trecut printr-o experiență oncologică.</span>",
+      "• Aparținători, prieteni și persoane care vor să înțeleagă cum pot ajuta.",
+      "• Profesioniști interesați de o abordare empatică, centrată pe pacient.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">Înscriere</h2>",
+      "<p>Evenimentele se anunță din timp pe:</p>",
+      "• <a href=\"https://www.facebook.com/profile.php?id=61576674601615\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #27B6A8;\">Facebook</a>",
+      "• <a href=\"https://www.instagram.com/limfedemimpreunapas?igsh=MW00Z29nZ21qZG9kNQ==\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #27B6A8;\">Instagram</a>",
+      "• <a href=\"https://www.tiktok.com/@limfedemimpreunapascupas?_r=1&_t=ZN-919WlDPlcU2\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #27B6A8;\">TikTok</a>",
+      "<p>Locuri limitate pentru a păstra timpul de discuții.",
+      "<span style=\"font-weight: bold;\">Împreună, pas cu pas</span>, transformăm întrebările în soluții simple și aplicabile în viața de zi cu zi.</p>"
     ],
-    "image": "/assets/events/decembrie/decembrie-1.jpg",
+    "image": "/assets/events/novak/1.jpg",
     "images": [
-      "/assets/events/decembrie/decembrie-1.jpg"
+      "/assets/events/novak/1.jpg",
+      "/assets/events/novak/2.jpg",
+      "/assets/events/novak/3.jpg",
+      "/assets/events/novak/4.jpg",
+      "/assets/events/novak/5.jpg",
+      "/assets/events/novak/6.jpg"
     ]
   },
   {
-    "title": "Eveniment informare cadre medicale",
-    "id": "informare",
+    "title": "🏆 Premiul Asociației Limfedem – „Împreună pas cu pas” la Gala Fizioterapeuților din România",
+    "id": "colegiu",
     "description": [
-      "🟢 Evenimentul “Limfedemul – de la diagnostic la tratament”, desfășurat în Râmnicu Sărat, s-a încheiat. Doresc să adresez cele mai sincere mulțumiri invitației onorante a doamnei dr. Giba-Pascutoi Andreea, medic chirurg la Spitalul din Râmnicu Sărat, de a lua parte la evenimentul dedicat diagnosticului și tratamentului limfedemului. A fost o experiență cu adevărat valoroasă și educativă, iar contribuția doamnei dr. Giba-Pascutoi Andreea la organizarea acestui eveniment a fost esențială pentru succesul său.",
-      "🟢 În același timp, aș dori să exprim recunoștința față de eforturile depuse de către fizioterapeuții voluntari care au susținut prezentările la eveniment Ada Chivu si Catalina Musteața , care prin dedicarea lor și experiența profesională în managementul limfedemului, au prezentat complex si cu o energie debordantă această afecțiune cronică mai puțin cunoscută, dar cu un impact major în viața pacienților oncologici și nu numai.",
-      "🟢 Doresc să mulțumesc medicilor chirurgi, interniști, infecționiști, de familie, BFK, asistenților medicali, kinetoterapeuților, tehnicienilor maseuri și pacienților participanți, acum mai bogați în informații cu privire la această temă de interes. A fost cu adevărat impresionant să văd cum profesioniști din domeniul sănătății se reunesc pentru a contribui la ghidarea, informarea și îngrijirea pacienților cu limfedem.",
-      "🟢 Evenimentul a fost, fără îndoială, unul complex, la fel ca tema abordată. Apreciem eforturile depuse pentru a aduce în discuție această problemă importantă și pentru a promova educația în rândul comunității.",
-      "#limfedem #lifedemsecundar #limfedemprimar #gestionarelimfedem #diagnosticlimfedem"
+      "Suntem onorați și recunoscători pentru <span style=\"font-weight: bold;\">premiul primit la Gala Fizioterapeuților din România</span>, o recunoaștere a muncii noastre dedicate pacienților cu limfedem și a parteneriatului strâns dintre asociația noastră și profesioniștii din domeniul fizioterapiei.",
+      "Acest premiu reprezintă <span style=\"font-weight: bold;\">mai mult decât o distincție</span> – este o dovadă că vocea pacienților este ascultată, că eforturile comune pot schimba destine și că recuperarea devine posibilă atunci când pacientul și fizioterapeutul lucrează împreună, pas cu pas.",
+      "<span style=\"font-weight: bold;\">💙 Fizioterapeutul are un rol esențial în viața pacientului cu limfedem</span>: prin mâinile lui, pacientul redescoperă speranța, prin exercițiile și îndrumarea lui, recâștigă controlul asupra corpului, iar prin empatia lui, capătă încrederea de a merge mai departe.",
+      "Acest premiu ne încurajează să continuăm misiunea noastră – <span style=\"font-weight: bold;\">educația, sprijinul și conștientizarea privind limfedemul</span> – alături de profesioniști dedicați, care înțeleg că fizioterapia nu înseamnă doar tratament, ci și <span style=\"font-weight: bold;\">umanitate, răbdare și grijă</span>.",
+      "Mulțumim din inimă <span style=\"font-weight: bold;\">Colegiului Fizioterapeuților din România</span> pentru recunoaștere și pentru sprijinul oferit tuturor celor care duc fizioterapia la nivelul de artă și vocație."
     ],
-    "image": "/assets/events/informare/informare-1.jpg",
+    "image": "/assets/events/colegiu/1.jpg",
     "images": [
-      "/assets/events/informare/informare-1.jpg"
+      "/assets/events/colegiu/1.jpg",
+      "/assets/events/colegiu/2.jpg",
+      "/assets/events/colegiu/3.jpg",
+      "/assets/events/colegiu/4.jpg"
     ]
   },
   {
-    "title": "Prima tabara pentru copiii cu limfedem primar",
-    "id": "tabara-copii",
+    "title": "Ora de Limfo-Mișcare – gimnastică medicală online pentru limfedem și lipedem",
+    "id": "limfo-miscare",
     "description": [
-      "🚘⏰ Împărtășim cu voi experiența noastră din CAMP CIORĂPEII MAGICI, prima întâlnire pentru copiii cu limfedem primar. A fost o călătorie incredibilă, plină de învățăminte și momente de neuitat, iar acum, când ne-am întors cu toții acasă, inimile noastre rămân pline de amintiri frumoase.",
-      "🎊🎉 În aceste zile petrecute împreună în Sibiu la gazdele noastre speciale de la Chalet Maya, am descoperit nu doar locuri noi și frumoase, ci și puterea unității. Părinți și copii s-au unit într-o comunitate strânsă, în care dragostea și sprijinul reciproc au fost cele mai puternice instrumente. Am învățat împreună despre limfedemul primar, am împărtășit experiențe și ne-am susținut unii pe alții în călătoria noastră comună.",
-      "🍂🐈🐎Fiecare activitate în aer liber a fost nu doar distractivă, ci și un mod minunat de a demonstra că nimic nu ne poate împiedica să ne bucurăm de viață. Am simțit zâmbete sincere, am auzit râsete de copii și am creat amintiri care vor rămâne în inimile noastre. Prin cadourile dăruite, am simțit că suntem parte a unei lumi care înțelege, sprijină și iubește.",
-      "🧡💛Această tabără nu a fost doar un eveniment, ci o experiență transformatoare pentru noi toți. Copiii noștri au fost adevărate surse de inspirație, demonstrând că puterea și frumusețea vin în multe forme, iar limfedemul primar nu este decât o mică parte din ceea ce sunt ei cu adevărat.",
-      "❤💙Mulțumim fiecărui participant, fiecărui părinte, fiecărui voluntar, mulțumim Catalina Musteața și fiecărui sponsor care a făcut posibilă această tabără gratuită, de neuitat. Vă mulțumim pentru încredere și suntem recunoscători pentru fiecare moment petrecut împreună și așteptăm cu nerăbdare tabăra următoare, când vom continua să creăm amintiri și să împărtășim bucurii. Desigur, sperăm ca în anii următori să ni se alăture cât mai mulți copii cu limfedem primar, alături de părinții lor.",
-      "💚💜 Informația este esențială și numai împreună putem gestiona limfedemul. <br/>#asociatiapacientilorculimfedem <br/> #limfedemprimar <br/> #gestionarelimfedem <br/> #zileleciorapeilormagici</p><br/>"
+      "Mișcarea blândă este una dintre cele mai importante forme de îngrijire pentru persoanele cu <span style=\"font-weight: bold;\">limfedem</span> sau <span style=\"font-weight: bold;\">lipedem.</span>",
+      "De aceea, Asociația Limfedem – Împreună Pas cu Pas a creat programul <span style=\"font-weight: bold;\">Limfo-Mișcare</span>, o oră de gimnastică medicală online, dedicată tuturor femeilor care doresc să învețe cum să își ajute corpul prin mișcare sigură, adaptată și ghidată cu grijă. 🌿",
+      "Sesiunile sunt susținute de <span style=\"font-weight: bold;\">fizioterapeutul Ana Maria Gogoreanu</span>, specialist cu experiență în drenaj limfatic manual, exerciții terapeutice și recuperare postoncologică. Ana Maria ghidează fiecare mișcare cu blândețe, explică pas cu pas și oferă adaptări pentru orice nivel de mobilitate.",
+      "<h2 style=\"font-size: 1.8rem; color: #27B6A8; margin-top: 1.5rem;\">💙 De ce să participi:</h2>",
+      "• înveți cum să îți stimulezi sistemul limfatic prin exerciții corecte și respirație;",
+      "• menții elasticitatea articulațiilor și previi senzația de greutate și umflare;",
+      "• faci parte dintr-o comunitate caldă, de femei care înțeleg și se susțin reciproc;",
+      "• te miști în siguranță, din confortul casei tale.",
+      "<span style=\"font-weight: bold;\">🕕 Când</span>: În fiecare marți, ora 19:30",
+      "<span style=\"font-weight: bold;\">📍 Unde</span>: Online, pe Zoom",
+      "<span style=\"font-weight: bold;\">🌍 Participante</span>: femei din toată țara și din străinătate",
+      "<span style=\"font-weight: bold;\">📝 Înscrieri</span>: prin formularul de aici 👉 <a href=\"https://docs.google.com/forms/d/1no1J5L4dEtFMHKutW9jKkLEsWeTL1jO0HOifDqXnfw8/edit\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: #27B6A8;\">Formular înscriere</a>",
+      "Fiecare oră de <span style=\"font-weight: bold;\">Limfo-Mișcare</span> este un pas spre un corp mai ușor și o minte mai liniștită.",
+      "<span style=\"font-weight: bold;\">Împreună pas cu pas – pentru sănătate, mișcare și încredere.<span>"
     ],
-    "image": "/assets/events/tabara-copii/tabara-copii-1.jpg",
+    "image": "/assets/events/limfo-miscare/1.jpg",
     "images": [
-      "/assets/events/tabara-copii/tabara-copii-1.jpg"
+      "/assets/events/limfo-miscare/1.jpg",
+      "/assets/events/limfo-miscare/2.jpg",
+      "/assets/events/limfo-miscare/3.jpg",
+      "/assets/events/limfo-miscare/4.jpg"
     ]
   },
   {
@@ -74,9 +119,11 @@
       "🦒Această descoperire este relevantă și în contextul îmbrăcămintei de compresie care este putin recomandată și folosită, din păcate. Totuși, această îmbrăcăminte oferă o compresie personalizată pentru pacienți și reprezintă o alternativă la metodele tradiționale de imobilizare, cum ar fi bandajele multistrat. Această inovație are la bază cercetările legate de girafe.Deși pacienții sunt sceptici la început și pot refuza să folosească astfel de produse, rezultatele obținute sunt cu adevărat spectaculoase.",
       "🌺 Să aveți spor la exerciții fizice și să purtați zilnic îmbrăcămintea de compresie pentru o stare de bine."
     ],
-    "image": "/assets/events/gimnastica/gimnastica-1.jpg",
+    "image": "/assets/events/gimnastica/1.jpg",
     "images": [
-      "/assets/events/gimnastica/gimnastica-1.jpg"
+      "/assets/events/gimnastica/1.jpg",
+      "/assets/events/gimnastica/2.jpg",
+      "/assets/events/gimnastica/3.jpg"
     ]
   }
 ]

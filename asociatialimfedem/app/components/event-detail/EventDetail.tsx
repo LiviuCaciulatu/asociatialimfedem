@@ -83,7 +83,7 @@ const EventDetail: React.FC<{ event: Event }> = ({ event }) => {
           <aside className={styles.voluntarWrap}>
             <div className={styles.voluntarCard}>
               <img
-                src="/assets/events/decembrie/decembrie-1.jpg"
+                src="/assets/gallery/g6.jpeg"
                 alt="Fii voluntar"
                 className={styles.voluntarImage}
               />

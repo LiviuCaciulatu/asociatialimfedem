@@ -5,28 +5,43 @@
     "image": "/assets/echipa/claudia-trandafirescu.jpg"
   },
   {
-    "name": "Ada Chivu",
-    "position": "fizioterapeut",
-    "image": "/assets/echipa/ada-chivu.jpg"
-  },
-  {
-    "name": "Cristina Gogoreanu",
-    "position": "fizioterapeut",
-    "image": "/assets/echipa/cristina-gogoreanu.jpg"
+    "name": "Florentina Matei",
+    "position": "Fizioterapeut specializat in managementul limfedemului",
+    "image": "/assets/echipa/florentina-matei.jpg"
   },
   {
     "name": "Cătălina Musteață",
-    "position": "fizioterapeut",
+    "position": "Fizioterapeut  specializat in managementul limfedemului",
     "image": "/assets/echipa/catalina-musteata.jpg"
   },
   {
-    "name": "Mary Saulea",
-    "position": "voluntar",
-    "image": "/assets/echipa/mary-saulea.png"
+    "name": "Ana Maria Taranu",
+    "position": "Fizioterapeut specializat in managementul limfedemului",
+    "image": "/assets/echipa/ana-maria-taranu.jpg"
   },
   {
-    "name": "Simona Pătruț",
-    "position": "voluntar",
-    "image": "/assets/echipa/simona-patrut.png"
+    "name": "Sandra Bolos",
+    "position": "Limfolog",
+    "image": "/assets/echipa/sandra-bolos.jpg"
+  },
+  {
+    "name": "Alexandra Vija",
+    "position": "Pacient cu limfedem primar",
+    "image": "/assets/echipa/alexandra-vija.jpg"
+  },
+  {
+    "name": "Mara Cernat",
+    "position": "Pacient cu limfedem primar",
+    "image": "/assets/echipa/mara-cernat.jpg"
+  },
+  {
+    "name": "Iannis Mitrica",
+    "position": "Pacient cu limfedem primar",
+    "image": "/assets/echipa/iannis-mitrica.jpg"
+  },
+  {
+    "name": "Antonia Miron",
+    "position": "Pacient cu limfedem primar",
+    "image": "/assets/echipa/antonia-miron.jpg"
   }
 ]

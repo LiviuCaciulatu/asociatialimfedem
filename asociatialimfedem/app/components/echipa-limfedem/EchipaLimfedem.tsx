@@ -54,7 +54,7 @@ const EchipaLimfedem: React.FC = () => {
             <div className={styles.volunteers}>
               <h3 className={styles.sectionTitle}>Echipa de voluntari</h3>
               <div className={styles.grid}>
-                {employees.slice(2).map((emp, idx) => (
+                {employees.slice(1).map((emp, idx) => (
                   <EmployeeCard key={idx} name={emp.name} position={emp.position} image={emp.image} />
                 ))}
               </div>
